@@ -1,0 +1,29 @@
+{
+  "shopName": "Bandido & Cartel",
+  "email": "bandido.cartel.germany@gmail.com",
+  "phone": "+49 1515 5612176",
+  "whatsapp": "+49 1521 6220396",
+  "address": {
+    "owner": "Mandy Weigand",
+    "country": "Deutschland"
+  },
+  "shipping": {
+    "cost": 6.19,
+    "freeThreshold": 20,
+    "processingDays": 2,
+    "deliveryDaysMin": 3,
+    "deliveryDaysMax": 5,
+    "countries": ["DE"]
+  },
+  "currency": "EUR",
+  "locale": "de-DE",
+  "returnPolicy": {
+    "days": 14,
+    "requiresUnopened": true
+  },
+  "socialMedia": {
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
+  }
+}
