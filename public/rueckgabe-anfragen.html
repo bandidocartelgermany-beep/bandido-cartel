@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rückgabe anfragen | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Rückgabeanfrage bei Bandido & Cartel – einfach online mit Bestellnummer und E-Mail einreichen."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111111 100%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .return-page {
+      padding: 80px 20px;
+    }
+
+    .return-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .return-hero {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .return-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.08);
+      color: #d4af37;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .return-hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.1;
+    }
+
+    .return-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+
+    .return-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .return-box,
+    .info-box {
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(20,20,20,0.97), rgba(12,12,12,0.99));
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+    }
+
+    .return-box h2,
+    .info-box h2 {
+      margin: 0 0 16px;
+      font-size: 1.42rem;
+      color: #ffffff;
+    }
+
+    .return-box > p,
+    .info-box > p {
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+
+    .return-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #0d0d0d;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-size: 15px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: rgba(212, 175, 55, 0.72);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.10);
+      background: #111111;
+    }
+
+    select option {
+      color: #111111;
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .form-note {
+      margin-top: 18px;
+      color: rgba(255, 255, 255, 0.62);
+      line-height: 1.6;
+      font-size: 0.94rem;
+    }
+
+    .submit-btn {
+      margin-top: 24px;
+      width: 100%;
+      border: none;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #d4af37;
+      color: #111111;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background: #e5c75c;
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.72;
+      cursor: wait;
+      transform: none;
+    }
+
+    .message-box {
+      display: none;
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
+
+    .message-box.success {
+      background: rgba(46, 160, 67, 0.12);
+      border: 1px solid rgba(46, 160, 67, 0.35);
+      color: #8ee6a3;
+    }
+
+    .message-box.error {
+      background: rgba(220, 53, 69, 0.10);
+      border: 1px solid rgba(220, 53, 69, 0.35);
+      color: #ff9aa5;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .info-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #d4af37;
+      font-size: 0.98rem;
+    }
+
+    .info-item span {
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.7;
+      display: block;
+    }
+
+    .info-box ul {
+      margin: 16px 0 0;
+      padding-left: 18px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+
+    .info-box li + li {
+      margin-top: 8px;
+    }
+
+    .highlight {
+      color: #d4af37;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .return-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .return-page {
+        padding: 56px 16px;
+      }
+
+      .return-box,
+      .info-box {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .return-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="return-page">
+    <div class="return-wrap">
+      <section class="return-hero">
+        <div class="return-badge">Bandido &amp; Cartel Service</div>
+        <h1>Rückgabe anfragen</h1>
+        <p>
+          Sie möchten einen Artikel zurückgeben? Reichen Sie hier Ihre Rückgabeanfrage ein.
+          Bitte halten Sie Ihre Bestellnummer und E-Mail-Adresse bereit, damit wir Ihr Anliegen schnell zuordnen können.
+        </p>
+      </section>
+
+      <section class="return-layout">
+        <section class="return-box">
+          <h2>Rückgabeanfrage einreichen</h2>
+          <p>
+            Füllen Sie das Formular bitte vollständig aus. Ihre Anfrage wird direkt intern gespeichert und im Admin-Bereich bearbeitet.
+          </p>
+
+          <form id="return-form">
+            <div class="return-grid">
+              <div class="form-group">
+                <label for="orderNumber">Bestellnummer *</label>
+                <input type="text" id="orderNumber" name="orderNumber" placeholder="z. B. BC-2026-123456" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse *</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
+              </div>
+
+              <div class="form-group">
+                <label for="firstName">Vorname *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Nachname *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required />
+              </div>
+
+              <div class="form-group full">
+                <label for="reason">Grund der Rückgabe *</label>
+                <select id="reason" name="reason" required>
+                  <option value="">Bitte auswählen</option>
+                  <option value="Artikel wird nicht mehr benötigt">Artikel wird nicht mehr benötigt</option>
+                  <option value="Falscher Artikel bestellt">Falscher Artikel bestellt</option>
+                  <option value="Falscher Artikel geliefert">Falscher Artikel geliefert</option>
+                  <option value="Artikel beschädigt angekommen">Artikel beschädigt angekommen</option>
+                  <option value="Sonstiger Rückgabegrund">Sonstiger Rückgabegrund</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Beschreibung *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bitte beschreiben Sie Ihre Rückgabeanfrage kurz und konkret."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <p class="form-note">
+              Rückgaben sind nur für ungeöffnete Produkte in Originalverpackung vorgesehen.
+              Nach Prüfung Ihrer Anfrage erhalten Sie von uns die nächsten Schritte.
+            </p>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Rückgabeanfrage absenden</button>
+
+            <div id="successMessage" class="message-box success">
+              Ihre Rückgabeanfrage wurde erfolgreich übermittelt. Wir melden uns schnellstmöglich bei Ihnen.
+            </div>
+
+            <div id="errorMessage" class="message-box error">
+              Ihre Rückgabeanfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.
+            </div>
+          </form>
+        </section>
+
+        <aside class="info-box">
+          <h2>Wichtige Hinweise zur Rückgabe</h2>
+          <p>
+            Rückgaben sind nur für <span class="highlight">ungeöffnete Produkte in Originalverpackung</span>
+            möglich. Bitte senden Sie Ware nicht ohne vorherige Rückgabeanfrage zurück.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <strong>14 Tage Widerrufsrecht</strong>
+              <span>Ein Widerruf ist innerhalb von 14 Tagen ohne Angabe von Gründen möglich.</span>
+            </div>
+
+            <div class="info-item">
+              <strong>Ab dem 15. Tag</strong>
+              <span>Ab dem 15. Tag nach Erhalt werden keine Rückgaben mehr angenommen.</span>
+            </div>
+
+            <div class="info-item">
+              <strong>Weitere Schritte</strong>
+              <span>Nach Eingang Ihrer Anfrage erhalten Sie die weiteren Informationen von unserem Service-Team.</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Bitte geben Sie Ihre Bestellnummer korrekt an.</li>
+            <li>Beschreiben Sie den Grund der Rückgabe möglichst genau.</li>
+            <li>Unaufgeforderte Rücksendungen können nicht sauber zugeordnet werden.</li>
+          </ul>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const returnForm = document.getElementById("return-form");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+    const submitBtn = document.getElementById("submitBtn");
+
+    returnForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      successMessage.style.display = "none";
+      errorMessage.style.display = "none";
+
+      const payload = {
+        orderNumber: document.getElementById("orderNumber").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        firstName: document.getElementById("firstName").value.trim(),
+        lastName: document.getElementById("lastName").value.trim(),
+        reason: document.getElementById("reason").value.trim(),
+        message: document.getElementById("message").value.trim(),
+        source: "rueckgabeformular"
+      };
+
+      if (
+        !payload.orderNumber ||
+        !payload.email ||
+        !payload.firstName ||
+        !payload.lastName ||
+        !payload.reason ||
+        !payload.message
+      ) {
+        errorMessage.textContent = "Bitte füllen Sie alle Pflichtfelder vollständig aus.";
+        errorMessage.style.display = "block";
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Wird gesendet...";
+
+      try {
+        const response = await fetch("/api/returns", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok || !data.success) {
+          throw new Error(data?.error || "Rückgabeanfrage konnte nicht gespeichert werden.");
+        }
+
+        returnForm.reset();
+        successMessage.textContent =
+          "Ihre Rückgabeanfrage wurde erfolgreich übermittelt. Wir melden uns schnellstmöglich bei Ihnen.";
+        successMessage.style.display = "block";
+      } catch (error) {
+        errorMessage.textContent =
+          error.message || "Ihre Rückgabeanfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.";
+        errorMessage.style.display = "block";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Rückgabeanfrage absenden";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stornierung anfragen | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Stornierungsanfrage bei Bandido & Cartel – einfach online mit Bestellnummer und E-Mail einreichen."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111111 100%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cancel-page {
+      padding: 80px 20px;
+    }
+
+    .cancel-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .cancel-hero {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .cancel-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.08);
+      color: #d4af37;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .cancel-hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.1;
+    }
+
+    .cancel-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+
+    .cancel-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .cancel-box,
+    .info-box {
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(20,20,20,0.97), rgba(12,12,12,0.99));
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+    }
+
+    .cancel-box h2,
+    .info-box h2 {
+      margin: 0 0 16px;
+      font-size: 1.42rem;
+      color: #ffffff;
+    }
+
+    .cancel-box > p,
+    .info-box > p {
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+
+    .cancel-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #0d0d0d;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-size: 15px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: rgba(212, 175, 55, 0.72);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.10);
+      background: #111111;
+    }
+
+    select option {
+      color: #111111;
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    .form-note {
+      margin-top: 18px;
+      color: rgba(255, 255, 255, 0.62);
+      line-height: 1.6;
+      font-size: 0.94rem;
+    }
+
+    .submit-btn {
+      margin-top: 24px;
+      width: 100%;
+      border: none;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #d4af37;
+      color: #111111;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background: #e5c75c;
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.72;
+      cursor: wait;
+      transform: none;
+    }
+
+    .message-box {
+      display: none;
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
+
+    .message-box.success {
+      background: rgba(46, 160, 67, 0.12);
+      border: 1px solid rgba(46, 160, 67, 0.35);
+      color: #8ee6a3;
+    }
+
+    .message-box.error {
+      background: rgba(220, 53, 69, 0.10);
+      border: 1px solid rgba(220, 53, 69, 0.35);
+      color: #ff9aa5;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .info-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #d4af37;
+      font-size: 0.98rem;
+    }
+
+    .info-item span {
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.7;
+      display: block;
+    }
+
+    .info-box ul {
+      margin: 16px 0 0;
+      padding-left: 18px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+
+    .info-box li + li {
+      margin-top: 8px;
+    }
+
+    .highlight {
+      color: #d4af37;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .cancel-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .cancel-page {
+        padding: 56px 16px;
+      }
+
+      .cancel-box,
+      .info-box {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .cancel-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="cancel-page">
+    <div class="cancel-wrap">
+      <section class="cancel-hero">
+        <div class="cancel-badge">Bandido &amp; Cartel Service</div>
+        <h1>Stornierung anfragen</h1>
+        <p>
+          Sie möchten Ihre Bestellung stornieren? Reichen Sie hier Ihre Anfrage ein.
+          Eine Stornierung ist nur möglich, solange die Bestellung noch nicht bearbeitet oder versendet wurde.
+        </p>
+      </section>
+
+      <section class="cancel-layout">
+        <section class="cancel-box">
+          <h2>Stornierungsanfrage einreichen</h2>
+          <p>
+            Bitte füllen Sie das Formular vollständig aus. Ihre Anfrage wird direkt intern gespeichert und im Admin-Bereich bearbeitet.
+          </p>
+
+          <form id="cancel-form">
+            <div class="cancel-grid">
+              <div class="form-group">
+                <label for="orderNumber">Bestellnummer *</label>
+                <input type="text" id="orderNumber" name="orderNumber" placeholder="z. B. BC-2026-123456" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse *</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
+              </div>
+
+              <div class="form-group">
+                <label for="firstName">Vorname *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Nachname *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required />
+              </div>
+
+              <div class="form-group full">
+                <label for="reason">Grund der Stornierung *</label>
+                <select id="reason" name="reason" required>
+                  <option value="">Bitte auswählen</option>
+                  <option value="Versehentlich bestellt">Versehentlich bestellt</option>
+                  <option value="Bestellung wird nicht mehr benötigt">Bestellung wird nicht mehr benötigt</option>
+                  <option value="Falsche Produkte bestellt">Falsche Produkte bestellt</option>
+                  <option value="Ich möchte neu bestellen">Ich möchte neu bestellen</option>
+                  <option value="Sonstiger Stornierungsgrund">Sonstiger Stornierungsgrund</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Zusätzliche Angaben *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bitte geben Sie hier weitere Informationen zu Ihrer Stornierungsanfrage an."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <p class="form-note">
+              Wichtig: Eine Stornierung ist nur möglich, solange Ihre Bestellung noch nicht bearbeitet oder versendet wurde.
+              Bereits versendete Bestellungen können nicht mehr storniert werden.
+            </p>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Stornierungsanfrage absenden</button>
+
+            <div id="successMessage" class="message-box success">
+              Ihre Stornierungsanfrage wurde erfolgreich übermittelt. Wir prüfen Ihr Anliegen schnellstmöglich.
+            </div>
+
+            <div id="errorMessage" class="message-box error">
+              Ihre Stornierungsanfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.
+            </div>
+          </form>
+        </section>
+
+        <aside class="info-box">
+          <h2>Wichtige Hinweise zur Stornierung</h2>
+          <p>
+            Eine Stornierung kann nur erfolgen, wenn Ihre Bestellung noch
+            <span class="highlight">nicht versendet</span> wurde.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Schnell handeln</strong>
+              <span>Je früher Ihre Anfrage eingeht, desto besser kann geprüft werden, ob die Bestellung noch gestoppt werden kann.</span>
+            </div>
+
+            <div class="info-item">
+              <strong>Bestellung bereits versendet</strong>
+              <span>Bei bereits versendeten Bestellungen ist statt einer Stornierung meist nur noch eine Rückgabeanfrage möglich.</span>
+            </div>
+
+            <div class="info-item">
+              <strong>Prüfung durch den Service</strong>
+              <span>Nach Eingang Ihrer Anfrage erhalten Sie schnellstmöglich eine Rückmeldung von unserem Service-Team.</span>
+            </div>
+          </div>
+
+          <ul>
+            <li>Bitte geben Sie immer Ihre korrekte Bestellnummer und E-Mail-Adresse an.</li>
+            <li>Beschreiben Sie den Stornierungswunsch möglichst kurz und eindeutig.</li>
+            <li>Nach Prüfung informieren wir Sie über die nächsten Schritte.</li>
+          </ul>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const cancelForm = document.getElementById("cancel-form");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+    const submitBtn = document.getElementById("submitBtn");
+
+    cancelForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      successMessage.style.display = "none";
+      errorMessage.style.display = "none";
+
+      const payload = {
+        orderNumber: document.getElementById("orderNumber").value.trim(),
+        email: document.getElementById("email").value.trim(),
+        firstName: document.getElementById("firstName").value.trim(),
+        lastName: document.getElementById("lastName").value.trim(),
+        reason: document.getElementById("reason").value.trim(),
+        message: document.getElementById("message").value.trim(),
+        source: "stornierungsformular"
+      };
+
+      if (
+        !payload.orderNumber ||
+        !payload.email ||
+        !payload.firstName ||
+        !payload.lastName ||
+        !payload.reason ||
+        !payload.message
+      ) {
+        errorMessage.textContent = "Bitte füllen Sie alle Pflichtfelder vollständig aus.";
+        errorMessage.style.display = "block";
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Wird gesendet...";
+
+      try {
+        const response = await fetch("/api/cancellations", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok || !data.success) {
+          throw new Error(data?.error || "Stornierungsanfrage konnte nicht gespeichert werden.");
+        }
+
+        cancelForm.reset();
+        successMessage.textContent =
+          "Ihre Stornierungsanfrage wurde erfolgreich übermittelt. Wir prüfen Ihr Anliegen schnellstmöglich.";
+        successMessage.style.display = "block";
+      } catch (error) {
+        errorMessage.textContent =
+          error.message || "Ihre Stornierungsanfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.";
+        errorMessage.style.display = "block";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Stornierungsanfrage absenden";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adminbereich | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Adminbereich für Bestellungen und Reklamationen."
+  />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    :root {
+      --admin-bg-1: #090909;
+      --admin-bg-2: #111111;
+      --admin-card: rgba(255, 255, 255, 0.035);
+      --admin-card-strong: rgba(255, 255, 255, 0.05);
+      --admin-border: rgba(212, 175, 55, 0.14);
+      --admin-border-strong: rgba(212, 175, 55, 0.28);
+      --admin-gold: #d4af37;
+      --admin-gold-2: #e5c75c;
+      --admin-text: #ffffff;
+      --admin-text-soft: #c0c0c0;
+      --admin-text-muted: #909090;
+      --admin-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      --admin-radius-xl: 26px;
+      --admin-radius-lg: 20px;
+      --admin-radius-md: 16px;
+      --admin-radius-sm: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body.admin-page {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 28%),
+        linear-gradient(180deg, var(--admin-bg-1) 0%, var(--admin-bg-2) 100%);
+      color: var(--admin-text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .admin-shell {
+      width: min(1480px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 26px 0 56px;
+    }
+
+    .admin-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+
+    .admin-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .admin-kicker {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--admin-gold);
+      font-weight: 700;
+    }
+
+    .admin-page-title {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.02;
+      color: var(--admin-text);
+    }
+
+    .admin-page-subtitle {
+      margin: 0;
+      color: var(--admin-text-soft);
+      font-size: 15px;
+      max-width: 760px;
+      line-height: 1.6;
+    }
+
+    .admin-top-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .admin-btn {
+      appearance: none;
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      background: rgba(212, 175, 55, 0.08);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 14px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .admin-btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(212, 175, 55, 0.55);
+      background: rgba(212, 175, 55, 0.14);
+    }
+
+    .admin-btn-primary {
+      background: linear-gradient(135deg, var(--admin-gold) 0%, #b68c18 100%);
+      color: #111;
+      border-color: transparent;
+    }
+
+    .admin-btn-primary:hover {
+      background: linear-gradient(135deg, var(--admin-gold-2) 0%, #c9991f 100%);
+    }
+
+    .admin-sidebar,
+    .admin-main-card,
+    .admin-detail-card,
+    .admin-empty-card,
+    .admin-placeholder-card,
+    .admin-locked-card,
+    .admin-stat-card {
+      border: 1px solid var(--admin-border);
+      background: var(--admin-card);
+      border-radius: var(--admin-radius-xl);
+      box-shadow: var(--admin-shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: 310px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .admin-sidebar {
+      padding: 18px;
+      position: sticky;
+      top: 16px;
+    }
+
+    .admin-sidebar-head {
+      margin-bottom: 14px;
+    }
+
+    .admin-sidebar-title {
+      margin: 0 0 6px;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .admin-sidebar-text {
+      margin: 0;
+      color: var(--admin-text-soft);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .admin-section-tabs {
+      display: grid;
+      gap: 10px;
+    }
+
+    .admin-tab-btn {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+      color: #fff;
+      border-radius: 18px;
+      padding: 15px 14px;
+      cursor: pointer;
+      text-align: left;
+      transition: 0.25s ease;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .admin-tab-btn:hover {
+      border-color: rgba(212, 175, 55, 0.35);
+      background: rgba(212, 175, 55, 0.07);
+      transform: translateY(-1px);
+    }
+
+    .admin-tab-btn.active {
+      border-color: rgba(212, 175, 55, 0.6);
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.16), rgba(212, 175, 55, 0.08));
+      box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.1);
+    }
+
+    .admin-sidebar-note {
+      margin-top: 18px;
+      padding: 15px;
+      border-radius: 18px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      color: #d6d6d6;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .admin-main {
+      display: grid;
+      gap: 22px;
+    }
+
+    .admin-main-card,
+    .admin-detail-card {
+      padding: 20px;
+    }
+
+    .admin-section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .admin-section-title-wrap h2 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      color: #fff;
+      line-height: 1.1;
+    }
+
+    .admin-section-title-wrap p {
+      margin: 0;
+      color: var(--admin-text-soft);
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 760px;
+    }
+
+    .admin-toolbar {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) 190px;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .admin-input,
+    .admin-select {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+      color: #fff;
+      border-radius: 14px;
+      padding: 13px 14px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.25s ease;
+    }
+
+    .admin-input:focus,
+    .admin-select:focus {
+      border-color: rgba(212, 175, 55, 0.5);
+      background: rgba(212, 175, 55, 0.06);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.08);
+    }
+
+    .admin-select option {
+      color: #111;
+    }
+
+    .admin-info-message,
+    .admin-error-message {
+      margin-bottom: 16px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .admin-info-message {
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      color: var(--admin-gold);
+    }
+
+    .admin-error-message {
+      background: rgba(231, 76, 60, 0.12);
+      border: 1px solid rgba(231, 76, 60, 0.2);
+      color: #ffb0a8;
+    }
+
+    .admin-stats {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .admin-stat-card {
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .admin-stat-card strong {
+      display: block;
+      font-size: 30px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .admin-stat-card span {
+      color: var(--admin-text-soft);
+      font-size: 13px;
+    }
+
+    .admin-list-wrap {
+      display: grid;
+      gap: 14px;
+    }
+
+    .admin-list-row {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+      border-radius: 20px;
+      padding: 16px;
+      transition: 0.25s ease;
+      text-align: left;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .admin-list-row:hover {
+      border-color: rgba(212, 175, 55, 0.25);
+      background: rgba(212, 175, 55, 0.05);
+      transform: translateY(-1px);
+    }
+
+    .admin-list-row.active {
+      border-color: rgba(212, 175, 55, 0.52);
+      background: rgba(212, 175, 55, 0.08);
+    }
+
+    .admin-list-row-top,
+    .admin-list-row-middle,
+    .admin-list-row-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .admin-list-row-top {
+      margin-bottom: 10px;
+      align-items: center;
+    }
+
+    .admin-list-row-middle {
+      margin-bottom: 10px;
+      color: #c9c9c9;
+      font-size: 14px;
+    }
+
+    .admin-list-row-bottom {
+      color: #9d9d9d;
+      font-size: 13px;
+    }
+
+    .admin-status-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .admin-status-badge.large {
+      min-height: 40px;
+      padding: 10px 16px;
+    }
+
+    .status-neu,
+    .status-offen {
+      background: rgba(212, 175, 55, 0.14);
+      color: #f3d375;
+      border-color: rgba(212, 175, 55, 0.32);
+    }
+
+    .status-in-bearbeitung,
+    .status-bezahlt {
+      background: rgba(58, 134, 255, 0.14);
+      color: #91bcff;
+      border-color: rgba(58, 134, 255, 0.32);
+    }
+
+    .status-geloest,
+    .status-versendet,
+    .status-abgeschlossen {
+      background: rgba(46, 204, 113, 0.14);
+      color: #8df0b6;
+      border-color: rgba(46, 204, 113, 0.32);
+    }
+
+    .status-abgelehnt,
+    .status-storniert {
+      background: rgba(231, 76, 60, 0.14);
+      color: #ff9b90;
+      border-color: rgba(231, 76, 60, 0.32);
+    }
+
+    .admin-detail-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .admin-detail-head h3 {
+      margin: 0 0 6px;
+      font-size: 25px;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .admin-detail-head p {
+      margin: 0;
+      color: var(--admin-text-soft);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .admin-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .admin-detail-box {
+      border-radius: 18px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      min-height: 88px;
+    }
+
+    .admin-detail-box h4 {
+      margin: 0 0 10px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .admin-detail-box p {
+      margin: 0 0 8px;
+      color: #d7d7d7;
+      line-height: 1.6;
+      word-break: break-word;
+    }
+
+    .admin-items-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .admin-item-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      color: #fff;
+    }
+
+    .admin-action-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .admin-action-btn {
+      appearance: none;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.04);
+      color: #fff;
+      border-radius: 12px;
+      padding: 10px 14px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.25s ease;
+    }
+
+    .admin-action-btn:hover {
+      border-color: rgba(212, 175, 55, 0.4);
+      background: rgba(212, 175, 55, 0.08);
+    }
+
+    .admin-action-btn.active {
+      background: linear-gradient(135deg, var(--admin-gold) 0%, #b68c18 100%);
+      color: #111;
+      border-color: transparent;
+    }
+
+    .admin-empty-card,
+    .admin-placeholder-card,
+    .admin-locked-card {
+      padding: 28px;
+      text-align: center;
+      color: #bfbfbf;
+    }
+
+    .admin-empty-card h3,
+    .admin-locked-card h1 {
+      margin: 0 0 8px;
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .admin-empty-card p,
+    .admin-locked-card p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .admin-footer-note {
+      margin-top: 8px;
+      color: #8f8f8f;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 1240px) {
+      .admin-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 1080px) {
+      .admin-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .admin-sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .admin-toolbar,
+      .admin-detail-grid,
+      .admin-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .admin-shell {
+        width: min(100% - 18px, 1480px);
+        padding-top: 18px;
+      }
+
+      .admin-main-card,
+      .admin-detail-card,
+      .admin-sidebar,
+      .admin-stat-card {
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body class="admin-page">
+  <main class="admin-shell">
+    <section class="admin-topbar">
+      <div class="admin-brand">
+        <span class="admin-kicker">Bandido & Cartel</span>
+        <h1 class="admin-page-title">Adminbereich</h1>
+        <p class="admin-page-subtitle">
+          Verwalte Bestellungen und Reklamationen zentral an einem Ort.
+        </p>
+      </div>
+
+      <div class="admin-top-actions">
+        <button class="admin-btn" id="admin-refresh" type="button">Aktualisieren</button>
+        <a class="admin-btn admin-btn-primary" href="../index.html">Zum Shop</a>
+      </div>
+    </section>
+
+    <section class="admin-grid" id="admin-app">
+      <aside class="admin-sidebar">
+        <div class="admin-sidebar-head">
+          <h2 class="admin-sidebar-title">Bereiche</h2>
+          <p class="admin-sidebar-text">
+            Wechsel schnell zwischen Bestellungen und Reklamationen.
+          </p>
+        </div>
+
+        <div class="admin-section-tabs" id="admin-section-tabs"></div>
+
+        <div class="admin-sidebar-note">
+          Tipp: Offene Fälle kannst du direkt im Detailbereich bearbeiten und den Status sofort ändern.
+        </div>
+      </aside>
+
+      <section class="admin-main">
+        <section class="admin-main-card">
+          <div class="admin-section-head">
+            <div class="admin-section-title-wrap">
+              <h2 id="admin-title">Bestellungen</h2>
+              <p id="admin-subtitle">
+                Übersicht aller Bestellungen mit Status, Kundendaten und Schnellaktionen.
+              </p>
+            </div>
+          </div>
+
+          <div id="admin-message"></div>
+
+          <div class="admin-toolbar">
+            <input
+              type="search"
+              id="admin-search"
+              class="admin-input"
+              placeholder="Suchen nach Bestellnummer, Name, E-Mail, Telefonnummer ..."
+            />
+
+            <select id="admin-status-filter" class="admin-select">
+              <option value="alle">Alle Status</option>
+            </select>
+          </div>
+
+          <div class="admin-stats" id="admin-stats"></div>
+
+          <div id="admin-list"></div>
+        </section>
+
+        <section class="admin-detail-card" id="admin-details">
+          <div class="admin-detail-head">
+            <div>
+              <h3>Details</h3>
+              <p>Hier erscheinen alle Informationen zum ausgewählten Eintrag.</p>
+            </div>
+          </div>
+
+          <div class="admin-detail-grid">
+            <div class="admin-detail-box">
+              <h4>Info</h4>
+              <p>Keine Daten geladen.</p>
+            </div>
+          </div>
+        </section>
+
+        <p class="admin-footer-note">
+          Interne Verwaltungsoberfläche für Bandido & Cartel.
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+bandido-cartel/
+│
+├── server.js
+├── .env
+├── package.json
+├── package-lock.json
+├── node_modules/
+│
+├── data/
+│   ├── products.json
+│   ├── orders.json
+│   ├── reviews.json
+│   ├── coupons.json
+│   ├── contacts.json
+│   ├── newsletter.json
+│   ├── faq.json
+│   └── settings.json
+│
+└── public/
+│
+├── index.html
+├── shop.html
+├── product.html
+│
+├── cart.html
+├── checkout.html
+├── success.html
+├── cancel.html
+│
+├── mein-konto.html
+├── bestellung-verfolgen.html
+├── rueckgabe-anfragen.html
+├── reklamation.html
+│
+├── kontakt.html
+├── ueber-uns.html
+├── faq.html
+│
+├── versand.html
+├── rueckgabe.html
+├── zahlungsarten.html
+│
+├── impressum.html
+├── datenschutz.html
+├── agb.html
+├── widerruf.html
+│
+├── wishlist.html
+├── vergleich.html
+│
+├── 404.html
+│
+├── bartoel.html
+├── wax.html
+├── pomade.html
+├── aftershave.html
+├── haarpflege.html
+├── styling.html
+├── zubehoer.html
+├── style.css
+├── script.js
+
+js/
+│
+├── shop.js
+├── product.js
+├── cart.js
+├── checkout.js
+├── account.js
+├── contact.js
+├── search.js
+├── filter.js
+├── wishlist.js
+├── compare.js
+├── reviews.js
+├── recommendations.js
+├── coupons.js
+├── newsletter.js
+└── faq.js
+
+assets/
+│
+├── images/
+├── icons/
+└── logos/
+
+admin/
+│
+├── admin.html
+├── admin.css
+├── admin.js
+│
+├── orders.html
+├── products.html
+├── reviews.html
+├── coupons.html
+└── contacts.html
+
+data/
+│
+├── products.json
+├── orders.json
+├── reviews.json
+├── coupons.json
+├── contacts.json
+├── newsletter.json
+├── faq.json
+└── settings.json

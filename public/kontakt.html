@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Kontakt zu Bandido & Cartel – erreichen Sie uns per WhatsApp, Telefon oder über das Kontaktformular."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111111 100%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contact-page {
+      padding: 80px 20px;
+    }
+
+    .contact-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .contact-hero {
+      text-align: center;
+      margin-bottom: 46px;
+    }
+
+    .contact-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.08);
+      color: #d4af37;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .contact-hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+    }
+
+    .contact-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .contact-card,
+    .form-card {
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(20,20,20,0.97), rgba(12,12,12,0.99));
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+    }
+
+    .contact-card h2,
+    .form-card h2 {
+      margin: 0 0 16px;
+      font-size: 1.45rem;
+      color: #ffffff;
+    }
+
+    .contact-card p,
+    .form-card p {
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .contact-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #d4af37;
+      font-size: 0.98rem;
+    }
+
+    .contact-item a,
+    .contact-item span {
+      color: #ffffff;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-note {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(212, 175, 55, 0.06);
+      border: 1px solid rgba(212, 175, 55, 0.14);
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.65;
+      font-size: 0.95rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 18px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #0d0d0d;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-size: 15px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: rgba(212, 175, 55, 0.72);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.10);
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-hint {
+      margin-top: -6px;
+      color: rgba(255, 255, 255, 0.60);
+      line-height: 1.6;
+      font-size: 0.93rem;
+    }
+
+    .submit-btn {
+      border: none;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #d4af37;
+      color: #111111;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background: #e5c75c;
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.72;
+      cursor: wait;
+      transform: none;
+    }
+
+    .message-box {
+      display: none;
+      padding: 16px 18px;
+      border-radius: 14px;
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
+
+    .message-box.success {
+      background: rgba(46, 160, 67, 0.12);
+      border: 1px solid rgba(46, 160, 67, 0.35);
+      color: #8ee6a3;
+    }
+
+    .message-box.error {
+      background: rgba(220, 53, 69, 0.10);
+      border: 1px solid rgba(220, 53, 69, 0.35);
+      color: #ff9aa5;
+    }
+
+    .highlight {
+      color: #d4af37;
+      font-weight: 700;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .contact-page {
+        padding: 56px 16px;
+      }
+
+      .contact-card,
+      .form-card {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="contact-page">
+    <div class="contact-wrap">
+      <section class="contact-hero">
+        <div class="contact-badge">Bandido &amp; Cartel Service</div>
+        <h1>Kontakt</h1>
+        <p>
+          Sie haben Fragen zu Ihrer Bestellung, zu Produkten oder zu einem Servicefall?
+          Schreiben Sie uns bequem über das Formular oder kontaktieren Sie uns direkt per WhatsApp, Telefon oder E-Mail.
+        </p>
+      </section>
+
+      <section class="contact-grid">
+        <div class="contact-card">
+          <h2>Direkt erreichen</h2>
+          <p>
+            Für allgemeine Fragen, Unterstützung zu Bestellungen oder Hilfe im Kundenbereich
+            stehen wir Ihnen gerne zur Verfügung.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/4915216220396" target="_blank" rel="noopener noreferrer">
+                +49 1521 6220396
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Telefon</strong>
+              <a href="tel:+4915155612176">
+                +49 1515 5612176
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <strong>E-Mail</strong>
+              <a href="mailto:bandido.cartel.germany@gmail.com">
+                bandido.cartel.germany@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Ansprechpartner Website</strong>
+              <span>Jeremy Pongratz</span>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <span class="highlight">Hinweis:</span> Für Anliegen zu Bestellungen geben Sie im Formular am besten direkt Ihre Bestellnummer an. So kann Ihr Anliegen schneller bearbeitet werden.
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Nachricht senden</h2>
+          <p>
+            Nutzen Sie das Kontaktformular für allgemeine Fragen, Produktanfragen oder Hilfe zu Ihrer Bestellung.
+          </p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="firstName">Vorname *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Nachname *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse *</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="text" id="phone" name="phone" placeholder="Optional" />
+              </div>
+
+              <div class="form-group">
+                <label for="orderNumber">Bestellnummer</label>
+                <input type="text" id="orderNumber" name="orderNumber" placeholder="Optional" />
+              </div>
+
+              <div class="form-group full">
+                <label for="topic">Thema *</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Bitte auswählen</option>
+                  <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+                  <option value="Frage zu Bestellung">Frage zu Bestellung</option>
+                  <option value="Produktanfrage">Produktanfrage</option>
+                  <option value="Frage zu Lieferung">Frage zu Lieferung</option>
+                  <option value="Servicefall">Servicefall</option>
+                  <option value="Sonstiges">Sonstiges</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Nachricht *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bitte schildern Sie Ihr Anliegen so genau wie möglich."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <p class="form-hint">
+              Pflichtfelder sind mit * markiert. Ihr Anliegen wird nach Eingang schnellstmöglich geprüft.
+            </p>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Nachricht absenden</button>
+
+            <div id="successMessage" class="message-box success">
+              Ihre Nachricht wurde erfolgreich übermittelt. Wir melden uns schnellstmöglich bei Ihnen.
+            </div>
+
+            <div id="errorMessage" class="message-box error">
+              Ihre Nachricht konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const contactForm = document.getElementById("contact-form");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+    const submitBtn = document.getElementById("submitBtn");
+
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      successMessage.style.display = "none";
+      errorMessage.style.display = "none";
+
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const orderNumber = document.getElementById("orderNumber").value.trim();
+      const topic = document.getElementById("topic").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!firstName || !lastName || !email || !topic || !message) {
+        errorMessage.textContent = "Bitte füllen Sie alle Pflichtfelder vollständig aus.";
+        errorMessage.style.display = "block";
+        return;
+      }
+
+      const finalMessage = orderNumber
+        ? `Bestellnummer: ${orderNumber}\n\n${message}`
+        : message;
+
+      const payload = {
+        firstName,
+        lastName,
+        email,
+        phone,
+        subject: topic,
+        message: finalMessage,
+        source: "kontaktformular",
+        page: "kontakt.html"
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Wird gesendet...";
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok || !data.success) {
+          throw new Error(data?.error || "Nachricht konnte nicht gespeichert werden.");
+        }
+
+        contactForm.reset();
+        successMessage.textContent =
+          "Ihre Nachricht wurde erfolgreich übermittelt. Wir melden uns schnellstmöglich bei Ihnen.";
+        successMessage.style.display = "block";
+      } catch (error) {
+        errorMessage.textContent =
+          error.message || "Ihre Nachricht konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.";
+        errorMessage.style.display = "block";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Nachricht absenden";
+      }
+    });
+  </script>
+</body>
+</html>

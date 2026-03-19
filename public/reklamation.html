@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reklamation | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Reklamation bei Bandido & Cartel einreichen – schnell und unkompliziert über unser Formular."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111111 100%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .complaint-page {
+      padding: 80px 20px;
+    }
+
+    .complaint-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .complaint-hero {
+      text-align: center;
+      margin-bottom: 46px;
+    }
+
+    .complaint-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.08);
+      color: #d4af37;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .complaint-hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+    }
+
+    .complaint-hero p {
+      max-width: 780px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.7;
+      font-size: 1.02rem;
+    }
+
+    .complaint-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .complaint-card,
+    .form-card {
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(20,20,20,0.97), rgba(12,12,12,0.99));
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+    }
+
+    .complaint-card h2,
+    .form-card h2 {
+      margin: 0 0 16px;
+      font-size: 1.45rem;
+      color: #ffffff;
+    }
+
+    .complaint-card p,
+    .form-card p {
+      margin: 0 0 14px;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .info-item {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .info-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #d4af37;
+      font-size: 0.98rem;
+    }
+
+    .info-item span {
+      color: #ffffff;
+      line-height: 1.7;
+      display: block;
+    }
+
+    .complaint-note {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(212, 175, 55, 0.06);
+      border: 1px solid rgba(212, 175, 55, 0.14);
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.65;
+      font-size: 0.95rem;
+    }
+
+    .highlight {
+      color: #d4af37;
+      font-weight: 700;
+    }
+
+    .complaint-form {
+      display: grid;
+      gap: 18px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #0d0d0d;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-size: 15px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: rgba(212, 175, 55, 0.72);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.10);
+    }
+
+    select option {
+      color: #111111;
+    }
+
+    textarea {
+      min-height: 170px;
+      resize: vertical;
+    }
+
+    .form-hint {
+      margin-top: -6px;
+      color: rgba(255, 255, 255, 0.60);
+      line-height: 1.6;
+      font-size: 0.93rem;
+    }
+
+    .submit-btn {
+      border: none;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #d4af37;
+      color: #111111;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background: #e5c75c;
+      transform: translateY(-1px);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.72;
+      cursor: wait;
+      transform: none;
+    }
+
+    .message-box {
+      display: none;
+      padding: 16px 18px;
+      border-radius: 14px;
+      line-height: 1.6;
+      font-size: 0.96rem;
+    }
+
+    .message-box.success {
+      background: rgba(46, 160, 67, 0.12);
+      border: 1px solid rgba(46, 160, 67, 0.35);
+      color: #8ee6a3;
+    }
+
+    .message-box.error {
+      background: rgba(220, 53, 69, 0.10);
+      border: 1px solid rgba(220, 53, 69, 0.35);
+      color: #ff9aa5;
+    }
+
+    @media (max-width: 900px) {
+      .complaint-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .complaint-page {
+        padding: 56px 16px;
+      }
+
+      .complaint-card,
+      .form-card {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="complaint-page">
+    <div class="complaint-wrap">
+      <section class="complaint-hero">
+        <div class="complaint-badge">Bandido &amp; Cartel Service</div>
+        <h1>Reklamation</h1>
+        <p>
+          Wenn mit Ihrer Bestellung etwas nicht stimmt, können Sie hier schnell eine Reklamation einreichen.
+          Bitte schildern Sie den Fall so genau wie möglich, damit wir ihn zügig prüfen können.
+        </p>
+      </section>
+
+      <section class="complaint-grid">
+        <div class="complaint-card">
+          <h2>Wichtige Hinweise</h2>
+          <p>
+            Reklamationen helfen uns dabei, Probleme schnell zu prüfen und eine passende Lösung für Sie zu finden.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Bestellnummer angeben</strong>
+              <span>Bitte geben Sie Ihre Bestellnummer möglichst genau an, damit wir Ihre Bestellung direkt zuordnen können.</span>
+            </div>
+
+            <div class="info-item">
+              <strong>Problem beschreiben</strong>
+              <span>Beschreiben Sie den Mangel oder das Problem so konkret wie möglich, damit wir Ihren Fall schneller bearbeiten können.</span>
+            </div>
+
+            <div class="info-item">
+              <strong>Bearbeitung</strong>
+              <span>Ihre Reklamation wird intern gespeichert und erscheint direkt im Admin-Bereich zur Bearbeitung.</span>
+            </div>
+          </div>
+
+          <div class="complaint-note">
+            <span class="highlight">Hinweis:</span> Je genauer Ihre Angaben sind, desto schneller können wir die Reklamation prüfen und Ihnen weiterhelfen.
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Reklamation einreichen</h2>
+          <p>
+            Füllen Sie das Formular bitte vollständig aus. Pflichtfelder sind mit * markiert.
+          </p>
+
+          <form id="complaint-form" class="complaint-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="firstName">Vorname *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Nachname *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Ihr Nachname" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse *</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required />
+              </div>
+
+              <div class="form-group">
+                <label for="orderNumber">Bestellnummer *</label>
+                <input type="text" id="orderNumber" name="orderNumber" placeholder="Ihre Bestellnummer" required />
+              </div>
+
+              <div class="form-group full">
+                <label for="reason">Grund der Reklamation *</label>
+                <select id="reason" name="reason" required>
+                  <option value="">Bitte auswählen</option>
+                  <option value="Falscher Artikel geliefert">Falscher Artikel geliefert</option>
+                  <option value="Artikel beschädigt angekommen">Artikel beschädigt angekommen</option>
+                  <option value="Artikel unvollständig">Artikel unvollständig</option>
+                  <option value="Qualitätsmangel">Qualitätsmangel</option>
+                  <option value="Lieferproblem">Lieferproblem</option>
+                  <option value="Sonstiges Problem">Sonstiges Problem</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Beschreibung des Problems *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Bitte schildern Sie Ihr Anliegen so genau wie möglich."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <p class="form-hint">
+              Nach dem Absenden wird Ihre Reklamation gespeichert und kann intern bearbeitet werden.
+            </p>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Reklamation absenden</button>
+
+            <div id="successMessage" class="message-box success">
+              Ihre Reklamation wurde erfolgreich übermittelt.
+            </div>
+
+            <div id="errorMessage" class="message-box error">
+              Ihre Reklamation konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const complaintForm = document.getElementById("complaint-form");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+    const submitBtn = document.getElementById("submitBtn");
+
+    complaintForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      successMessage.style.display = "none";
+      errorMessage.style.display = "none";
+
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const orderNumber = document.getElementById("orderNumber").value.trim();
+      const reason = document.getElementById("reason").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!firstName || !lastName || !email || !orderNumber || !reason || !message) {
+        errorMessage.textContent = "Bitte füllen Sie alle Pflichtfelder vollständig aus.";
+        errorMessage.style.display = "block";
+        return;
+      }
+
+      const payload = {
+        firstName,
+        lastName,
+        email,
+        orderNumber,
+        reason,
+        message,
+        source: "reklamationsformular"
+      };
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Wird gesendet...";
+
+      try {
+        const response = await fetch("/api/complaints", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok || !data.success) {
+          throw new Error(data?.error || "Reklamation konnte nicht gespeichert werden.");
+        }
+
+        complaintForm.reset();
+        successMessage.textContent =
+          "Ihre Reklamation wurde erfolgreich übermittelt. Wir prüfen Ihr Anliegen schnellstmöglich.";
+        successMessage.style.display = "block";
+      } catch (error) {
+        errorMessage.textContent =
+          error.message || "Ihre Reklamation konnte gerade nicht gesendet werden. Bitte versuchen Sie es erneut.";
+        errorMessage.style.display = "block";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Reklamation absenden";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warenkorb | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Dein Warenkorb bei Bandido & Cartel – übersichtlich, hochwertig und bereit für den Checkout."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="widget.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-topline">
+      <div class="container header-topline-inner">
+        <span>Premium Grooming Shop</span>
+        <span>Versand 6,19 €</span>
+        <span>Versandfrei ab 20 €</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="top-bar">
+        <a href="index.html" class="logo">Bandido & Cartel</a>
+
+        <nav class="main-nav">
+          <a href="index.html">Startseite</a>
+          <a href="shop.html">Shop</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="cart.html" class="cart-button active">
+            Warenkorb
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-page premium-cart-page">
+    <section class="cart-hero">
+      <div class="container">
+        <div class="cart-hero-box">
+          <p class="cart-eyebrow">Deine Auswahl</p>
+          <h1>Warenkorb</h1>
+          <p class="cart-intro">
+            Prüfe deine Produkte, passe Mengen an und gehe danach bequem zur Kasse.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-main-section">
+      <div class="container">
+        <div class="cart-layout premium-cart-layout">
+          <section class="cart-items-box premium-cart-items-box">
+            <div class="cart-section-head">
+              <div>
+                <p class="cart-section-kicker">Übersicht</p>
+                <h2>Deine Produkte</h2>
+              </div>
+              <a href="shop.html" class="btn btn-secondary cart-continue-btn">Weiter shoppen</a>
+            </div>
+
+            <div id="cart-free-shipping-note"></div>
+            <div id="cart-items"></div>
+          </section>
+
+          <aside class="cart-summary-box premium-cart-summary-box">
+            <p class="cart-summary-kicker">Zusammenfassung</p>
+            <h2>Bestellübersicht</h2>
+
+            <div class="cart-summary-card">
+              <div class="summary-row">
+                <span>Zwischensumme</span>
+                <strong id="cart-subtotal">0,00 €</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Versand</span>
+                <strong id="cart-shipping">0,00 €</strong>
+              </div>
+
+              <div class="summary-row total-row">
+                <span>Gesamt</span>
+                <strong id="cart-total">0,00 €</strong>
+              </div>
+            </div>
+
+            <div class="cart-summary-info">
+              <p>Sicherer Checkout und klare Bestellübersicht.</p>
+              <p>Versandfrei ab 20,00 € Warenwert innerhalb Deutschlands.</p>
+            </div>
+
+            <a href="checkout.html" class="btn btn-primary checkout-btn" id="checkout-btn">
+              Zur Kasse
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Alle Produkte</a>
+      </div>
+
+      <div>
+        <h4>Service</h4>
+        <a href="versand.html">Versand</a>
+        <a href="rueckgabe.html">Rückgabe</a>
+      </div>
+
+      <div>
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="widerruf.html">Widerruf</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

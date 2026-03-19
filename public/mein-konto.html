@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mein Konto | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Service-Center von Bandido & Cartel – Bestellung verfolgen, Reklamation einreichen, Rückgabe anfragen und Hilfe erhalten."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111111 100%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .account-page {
+      padding: 80px 20px;
+    }
+
+    .account-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .account-hero {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .account-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.08);
+      color: #d4af37;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .account-hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      color: #ffffff;
+    }
+
+    .account-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    .service-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 260px;
+      padding: 28px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(24,24,24,0.96), rgba(14,14,14,0.98));
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.10), transparent 35%);
+      pointer-events: none;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 175, 55, 0.4);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.42);
+    }
+
+    .service-icon {
+      width: 54px;
+      height: 54px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      margin-bottom: 22px;
+      font-size: 1.4rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      color: #d4af37;
+    }
+
+    .service-card h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      color: #ffffff;
+    }
+
+    .service-card p {
+      margin: 0 0 26px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.65;
+      font-size: 0.98rem;
+    }
+
+    .service-card a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-width: 160px;
+      padding: 13px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.25s ease;
+    }
+
+    .service-card a.primary {
+      background: #d4af37;
+      color: #111111;
+    }
+
+    .service-card a.primary:hover {
+      background: #e6c65b;
+      transform: translateY(-1px);
+    }
+
+    .service-card a.secondary {
+      background: transparent;
+      color: #d4af37;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+
+    .service-card a.secondary:hover {
+      background: rgba(212, 175, 55, 0.08);
+      border-color: rgba(212, 175, 55, 0.7);
+    }
+
+    .info-section {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 24px;
+      margin-bottom: 64px;
+    }
+
+    .info-box {
+      padding: 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(20,20,20,0.96), rgba(12,12,12,0.98));
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      box-shadow: 0 16px 46px rgba(0, 0, 0, 0.28);
+    }
+
+    .info-box h3 {
+      margin: 0 0 16px;
+      font-size: 1.4rem;
+      color: #ffffff;
+    }
+
+    .info-box p {
+      margin: 0 0 12px;
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.7;
+    }
+
+    .info-list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .info-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.6;
+    }
+
+    .info-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .highlight {
+      color: #d4af37;
+      font-weight: 700;
+    }
+
+    .contact-box {
+      text-align: left;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .contact-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.25s ease;
+    }
+
+    .contact-actions a:first-child {
+      background: #d4af37;
+      color: #111111;
+    }
+
+    .contact-actions a:first-child:hover {
+      background: #e6c65b;
+    }
+
+    .contact-actions a:last-child {
+      color: #d4af37;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      background: transparent;
+    }
+
+    .contact-actions a:last-child:hover {
+      background: rgba(212, 175, 55, 0.08);
+    }
+
+    .account-note {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.62);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 1100px) {
+      .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .info-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .account-page {
+        padding: 56px 16px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .service-card,
+      .info-box {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      .account-hero {
+        margin-bottom: 38px;
+      }
+
+      .account-hero p {
+        font-size: 0.98rem;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .contact-actions a,
+      .service-card a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="account-page">
+    <div class="account-wrap">
+      <section class="account-hero">
+        <div class="account-badge">Bandido &amp; Cartel Service</div>
+        <h1>Mein Konto &amp; Service-Center</h1>
+        <p>
+          Willkommen im Kundenbereich von Bandido &amp; Cartel. Hier können Sie Ihre
+          Bestellung verfolgen, eine Reklamation einreichen, eine Rückgabe anfragen
+          und schnell die passende Hilfe für Ihr Anliegen finden.
+        </p>
+      </section>
+
+      <section class="service-grid">
+        <article class="service-card">
+          <div>
+            <div class="service-icon">📦</div>
+            <h2>Bestellung verfolgen</h2>
+            <p>
+              Prüfen Sie schnell und unkompliziert den aktuellen Status Ihrer Bestellung
+              und behalten Sie den Versand jederzeit im Blick.
+            </p>
+          </div>
+          <a class="primary" href="bestellung-verfolgen.html">Jetzt öffnen</a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon">⚠️</div>
+            <h2>Reklamation</h2>
+            <p>
+              Melden Sie beschädigte, fehlerhafte oder unvollständige Lieferungen direkt
+              über unser Reklamationsformular.
+            </p>
+          </div>
+          <a class="secondary" href="reklamation.html">Reklamation starten</a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon">↩️</div>
+            <h2>Rückgabe anfragen</h2>
+            <p>
+              Sie möchten einen Artikel zurückgeben? Stellen Sie hier Ihre Rückgabeanfrage
+              bequem online.
+            </p>
+          </div>
+          <a class="secondary" href="rueckgabe-anfrage.html">Rückgabe anfragen</a>
+        </article>
+
+        <article class="service-card">
+          <div>
+            <div class="service-icon">❌</div>
+            <h2>Stornierung anfragen</h2>
+            <p>
+              Solange Ihre Bestellung noch nicht versendet wurde, können Sie hier eine
+              Stornierungsanfrage stellen.
+            </p>
+          </div>
+          <a class="secondary" href="stornierung-anfrage.html">Stornierung anfragen</a>
+        </article>
+      </section>
+
+      <section class="info-section">
+        <div class="info-box">
+          <h3>Wichtige Hinweise für Ihren Servicefall</h3>
+          <p>
+            Damit wir Ihre Anfrage schnell bearbeiten können, halten Sie bitte nach Möglichkeit
+            Ihre <span class="highlight">Bestellnummer</span> und die bei der Bestellung verwendeten
+            Kontaktdaten bereit.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <span class="highlight">Bestellung verfolgen:</span>
+              ideal, wenn Sie den aktuellen Bearbeitungs- oder Versandstatus prüfen möchten.
+            </li>
+            <li>
+              <span class="highlight">Reklamation:</span>
+              bei beschädigten Artikeln, fehlerhafter Ware oder fehlenden Produkten.
+            </li>
+            <li>
+              <span class="highlight">Rückgabe:</span>
+              für ungeöffnete und originalverpackte Produkte innerhalb der geltenden Frist.
+            </li>
+            <li>
+              <span class="highlight">Stornierung:</span>
+              nur möglich, solange Ihre Bestellung noch nicht versendet wurde.
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-box contact-box">
+          <h3>Direkte Hilfe</h3>
+          <p>
+            Bei Rückfragen erreichen Sie uns gerne auf direktem Weg. Unser Kundenservice
+            hilft Ihnen schnell und persönlich weiter.
+          </p>
+          <p><span class="highlight">WhatsApp:</span> +49 1521 6220396</p>
+          <p><span class="highlight">Telefon:</span> +49 1515 5612176</p>
+          <p><span class="highlight">E-Mail:</span> bandido.cartel.germany@gmail.com</p>
+
+          <div class="contact-actions">
+            <a href="kontakt.html">Kontakt öffnen</a>
+            <a href="bestellung-verfolgen.html">Bestellung prüfen</a>
+          </div>
+        </div>
+      </section>
+
+      <p class="account-note">
+        Hinweis: Dieser Kundenbereich dient als zentrales Service-Center. Je nach Anliegen
+        können für die Bearbeitung Bestellnummer, Name, E-Mail-Adresse oder weitere Angaben
+        erforderlich sein.
+      </p>
+    </div>
+  </main>
+</body>
+</html>

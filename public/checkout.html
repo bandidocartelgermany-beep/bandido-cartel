@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasse | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Sichere Kasse von Bandido & Cartel – Lieferadresse prüfen und Bestellung abschließen."
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="widget.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-topline">
+      <div class="container header-topline-inner">
+        <span>Premium Grooming Shop</span>
+        <span>Versand 6,19 €</span>
+        <span>Versandfrei ab 20 €</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="top-bar">
+        <a href="index.html" class="logo">Bandido & Cartel</a>
+
+        <nav class="main-nav">
+          <a href="index.html">Startseite</a>
+          <a href="shop.html">Shop</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="cart.html" class="cart-button">
+            Warenkorb
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-page premium-checkout-page">
+    <section class="checkout-hero">
+      <div class="container">
+        <div class="checkout-hero-box">
+          <p class="checkout-eyebrow">Sicher bestellen</p>
+          <h1>Kasse</h1>
+          <p class="checkout-intro">
+            Gib deine Daten ein, prüfe deine Bestellung und gehe danach sicher zur Zahlung.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="checkout-main-section">
+      <div class="container">
+        <div class="checkout-layout premium-checkout-layout">
+          <section class="checkout-form-box premium-checkout-form-box">
+            <div class="checkout-section-head">
+              <div>
+                <p class="checkout-section-kicker">Kundendaten</p>
+                <h2>Liefer- und Kontaktdaten</h2>
+              </div>
+            </div>
+
+            <form id="checkout-form" class="checkout-form" novalidate>
+              <div class="checkout-section">
+                <div class="form-grid form-grid-2">
+                  <div class="form-field">
+                    <label for="firstName">Vorname *</label>
+                    <input type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="lastName">Nachname *</label>
+                    <input type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+                  </div>
+                </div>
+
+                <div class="form-grid form-grid-2">
+                  <div class="form-field">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-section">
+                <h3 class="checkout-subtitle">Lieferadresse</h3>
+
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="street">Straße und Hausnummer *</label>
+                    <input type="text" id="street" name="street" autocomplete="street-address" required />
+                  </div>
+                </div>
+
+                <div class="form-grid form-grid-3">
+                  <div class="form-field">
+                    <label for="zip">PLZ *</label>
+                    <input type="text" id="zip" name="zip" autocomplete="postal-code" required />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="city">Ort *</label>
+                    <input type="text" id="city" name="city" autocomplete="address-level2" required />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="country">Land *</label>
+                    <input type="text" id="country" name="country" value="Deutschland" autocomplete="country-name" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-section">
+                <h3 class="checkout-subtitle">Bestellhinweis</h3>
+
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="notes">Notiz zur Bestellung</label>
+                    <textarea
+                      id="notes"
+                      name="notes"
+                      placeholder="Optional: Hinweise zur Bestellung"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-section">
+                <div class="check-row">
+                  <input type="checkbox" id="termsAccepted" name="termsAccepted" required />
+                  <label for="termsAccepted">
+                    Ich habe die <a href="agb.html" target="_blank" rel="noopener">AGB</a> und den
+                    <a href="widerruf.html" target="_blank" rel="noopener">Widerruf</a> gelesen und stimme zu. *
+                  </label>
+                </div>
+
+                <div class="check-row">
+                  <input type="checkbox" id="privacyAccepted" name="privacyAccepted" required />
+                  <label for="privacyAccepted">
+                    Ich habe die <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>
+                    gelesen und stimme der Verarbeitung meiner Daten zur Bestellabwicklung zu. *
+                  </label>
+                </div>
+              </div>
+
+              <div id="checkout-message" class="checkout-message" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary checkout-submit-btn" id="checkout-submit-btn">
+                Sicher zur Zahlung
+              </button>
+            </form>
+          </section>
+
+          <aside class="checkout-summary-box premium-checkout-summary-box">
+            <p class="checkout-summary-kicker">Bestellübersicht</p>
+            <h2>Deine Bestellung</h2>
+
+            <div id="checkout-items" class="checkout-items"></div>
+
+            <div class="checkout-summary-card">
+              <div class="summary-row">
+                <span>Zwischensumme</span>
+                <strong id="checkout-subtotal">0,00 €</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Versand</span>
+                <strong id="checkout-shipping">0,00 €</strong>
+              </div>
+
+              <div class="summary-row total-row">
+                <span>Gesamt</span>
+                <strong id="checkout-total">0,00 €</strong>
+              </div>
+            </div>
+
+            <div class="checkout-secure-note premium-checkout-note">
+              Deine Zahlung wird im nächsten Schritt sicher verarbeitet.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Alle Produkte</a>
+      </div>
+
+      <div>
+        <h4>Service</h4>
+        <a href="versand.html">Versand</a>
+        <a href="rueckgabe.html">Rückgabe</a>
+      </div>
+
+      <div>
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="widerruf.html">Widerruf</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/checkout.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestellung verfolgen | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Verfolgen Sie Ihre Bestellung bei Bandido & Cartel – schnell und einfach mit Bestellnummer und E-Mail."
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111111 100%);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tracking-page {
+      padding: 80px 20px;
+    }
+
+    .tracking-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .tracking-hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .tracking-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: #d4af37;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2.5rem;
+    }
+
+    .tracking-hero p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.6;
+    }
+
+    .tracking-box {
+      margin-top: 40px;
+      padding: 30px;
+      border-radius: 20px;
+      background: #141414;
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      background: #0e0e0e;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #d4af37;
+    }
+
+    .tracking-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      background: #d4af37;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .tracking-btn:hover {
+      background: #e6c65b;
+    }
+
+    .result-box {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 16px;
+      background: #0f0f0f;
+      border: 1px solid rgba(212,175,55,0.2);
+      display: none;
+    }
+
+    .status {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .status.open { color: #ff4d4d; }
+    .status.shipped { color: #4dff88; }
+
+    .tracking-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    .tracking-link:hover {
+      text-decoration: underline;
+    }
+
+    .error {
+      margin-top: 20px;
+      color: #ff4d4d;
+      display: none;
+    }
+
+    @media(max-width:600px){
+      .tracking-page {
+        padding: 50px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<main class="tracking-page">
+  <div class="tracking-wrap">
+
+    <div class="tracking-hero">
+      <div class="tracking-badge">Bandido & Cartel</div>
+      <h1>Bestellung verfolgen</h1>
+      <p>
+        Geben Sie Ihre Bestellnummer und E-Mail-Adresse ein, um den aktuellen Status Ihrer Bestellung einzusehen.
+      </p>
+    </div>
+
+    <div class="tracking-box">
+      <form id="tracking-form">
+        <div class="form-group">
+          <label>Bestellnummer</label>
+          <input type="text" id="orderNumber" required placeholder="z.B. BC-123456" />
+        </div>
+
+        <div class="form-group">
+          <label>E-Mail-Adresse</label>
+          <input type="email" id="email" required placeholder="Ihre E-Mail" />
+        </div>
+
+        <button class="tracking-btn" type="submit">Bestellung anzeigen</button>
+      </form>
+
+      <div class="error" id="error">
+        Bestellung nicht gefunden. Bitte überprüfen Sie Ihre Eingaben.
+      </div>
+
+      <div class="result-box" id="result">
+        <div class="status" id="status"></div>
+        <div id="details"></div>
+        <a id="trackingLink" class="tracking-link" target="_blank"></a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+document.getElementById("tracking-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const orderNumber = document.getElementById("orderNumber").value.trim();
+  const email = document.getElementById("email").value.trim();
+
+  const resultBox = document.getElementById("result");
+  const errorBox = document.getElementById("error");
+
+  resultBox.style.display = "none";
+  errorBox.style.display = "none";
+
+  try {
+    const res = await fetch("/api/order-status", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ orderNumber, email })
+    });
+
+    const data = await res.json();
+
+    if (!data.success) {
+      errorBox.style.display = "block";
+      return;
+    }
+
+    const statusEl = document.getElementById("status");
+    const detailsEl = document.getElementById("details");
+    const trackingLink = document.getElementById("trackingLink");
+
+    statusEl.textContent = "Status: " + data.status;
+
+    statusEl.className = "status " + (data.status === "versendet" ? "shipped" : "open");
+
+    detailsEl.innerHTML = `
+      <p><strong>Name:</strong> ${data.name}</p>
+      <p><strong>Datum:</strong> ${new Date(data.date).toLocaleDateString()}</p>
+      <p><strong>Gesamt:</strong> ${data.total} €</p>
+    `;
+
+    if (data.trackingUrl) {
+      trackingLink.href = data.trackingUrl;
+      trackingLink.textContent = "Sendung verfolgen";
+      trackingLink.style.display = "inline-block";
+    } else {
+      trackingLink.style.display = "none";
+    }
+
+    resultBox.style.display = "block";
+
+  } catch (err) {
+    errorBox.style.display = "block";
+  }
+});
+</script>
+
+</body>
+</html>

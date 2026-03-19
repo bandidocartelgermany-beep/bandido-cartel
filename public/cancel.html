@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zahlung abgebrochen | Bandido & Cartel</title>
+  <meta
+    name="description"
+    content="Die Zahlung wurde abgebrochen. Du kannst deinen Warenkorb bei Bandido & Cartel jederzeit weiter bearbeiten."
+  />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/widget.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-topline">
+      <div class="container header-topline-inner">
+        <span>Premium Grooming Shop</span>
+        <span>Versand 6,19 €</span>
+        <span>Versandfrei ab 20 €</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="top-bar">
+        <a href="/index.html" class="logo">Bandido & Cartel</a>
+
+        <nav class="main-nav">
+          <a href="/index.html">Startseite</a>
+          <a href="/shop.html">Shop</a>
+          <a href="/kontakt.html">Kontakt</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="/cart.html" class="cart-button">
+            Warenkorb
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="success-page">
+    <div class="container">
+      <section class="success-box">
+        <div class="success-icon">!</div>
+        <p class="section-kicker">Zahlung abgebrochen</p>
+        <h1>Deine Bestellung wurde nicht abgeschlossen</h1>
+        <p class="success-text">
+          Keine Sorge — dein Warenkorb bleibt bestehen. Du kannst jederzeit zurückgehen,
+          deine Auswahl prüfen und den Checkout erneut starten.
+        </p>
+
+        <div class="success-summary-box">
+          <h2>Wie geht es weiter?</h2>
+          <p>Du kannst direkt zurück in den Warenkorb oder weiter im Shop stöbern.</p>
+        </div>
+
+        <div class="success-actions">
+          <a href="/cart.html" class="btn btn-primary">Zurück zum Warenkorb</a>
+          <a href="/shop.html" class="btn btn-secondary">Weiter einkaufen</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      function getCart() {
+        try {
+          return JSON.parse(localStorage.getItem("bandido_cart")) || [];
+        } catch (error) {
+          return [];
+        }
+      }
+
+      function updateCartCount() {
+        const cart = getCart();
+        const totalQuantity = cart.reduce((sum, item) => sum + (Number(item.quantity) || 0), 0);
+        document.querySelectorAll(".cart-count").forEach((el) => {
+          el.textContent = totalQuantity;
+        });
+      }
+
+      updateCartCount();
+    })();
+  </script>
+  <script src="/js/cookies.js"></script>
+  <script src="/js/chatbot.js"></script>
+</body>
+</html>
