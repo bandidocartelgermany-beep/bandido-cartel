@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "productSlug": "bandido-aqua-wax-5-blue-150ml",
+    "name": "Markus T.",
+    "rating": 5,
+    "title": "Bestes Wax das ich je hatte!",
+    "comment": "Dieses Wax hält unglaublich gut und sieht super aus. Benutze es täglich seit Monaten und bin absolut begeistert. Empfehlung!",
+    "createdAt": "2025-01-15T10:30:00.000Z",
+    "verified": true
+  },
+  {
+    "id": "2",
+    "productSlug": "bandido-deluxe-pomade-125ml",
+    "name": "Leon S.",
+    "rating": 5,
+    "title": "Premium Qualität, top Preis",
+    "comment": "Die Deluxe Pomade ist einfach klasse. Guter Halt, toller Glanz und riecht super. Werde definitiv wieder bestellen.",
+    "createdAt": "2025-02-03T14:15:00.000Z",
+    "verified": true
+  },
+  {
+    "id": "3",
+    "productSlug": "bandido-bartoil-gold",
+    "name": "Ahmed K.",
+    "rating": 5,
+    "title": "Bart noch nie so gepflegt gewesen",
+    "comment": "Seit ich das Bartöl Gold benutze, ist mein Bart super weich und gepflegt. Der Duft ist auch sehr angenehm. Volle Empfehlung!",
+    "createdAt": "2025-02-20T09:00:00.000Z",
+    "verified": true
+  },
+  {
+    "id": "4",
+    "productSlug": "bandido-keratin-shampoo",
+    "name": "Stefan B.",
+    "rating": 4,
+    "title": "Sehr gutes Shampoo",
+    "comment": "Das Keratin-Shampoo macht das Haar wirklich weicher und glänzender. Bin sehr zufrieden, aber der Preis könnte etwas günstiger sein.",
+    "createdAt": "2025-03-01T16:45:00.000Z",
+    "verified": true
+  },
+  {
+    "id": "5",
+    "productSlug": "bandido-aftershave-cologne-berlin-350ml",
+    "name": "Tobias W.",
+    "rating": 5,
+    "title": "Toller Duft, lange anhaltend",
+    "comment": "Das Berlin Aftershave riecht fantastisch und hält den ganzen Tag. Schnelle Lieferung, gute Verpackung. Sehr empfehlenswert!",
+    "createdAt": "2025-03-10T11:00:00.000Z",
+    "verified": true
+  }
+]

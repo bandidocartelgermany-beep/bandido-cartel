@@ -1,1 +1,1086 @@
-[]
+[
+  {
+    "slug": "bandido-bartoil-black",
+    "name": "Bandido Bartöl Black",
+    "category": "Bartöl",
+    "price": 7.99,
+    "size": "30 ml",
+    "shortDescription": "Pflegendes Bartöl mit intensiver Wirkung und edlem Duft.",
+    "description": "Das Bandido Bartöl Black pflegt und zähmt den Bart intensiv. Die hochwertige Öl-Formel sorgt für einen gepflegten, glänzenden Bart und eine weiche Haut darunter. Mit einem charakteristischen, maskulinen Duft.",
+    "image": "images/products/bartoel/bandido-bartoil-black/bandido-bartoil-black-1.png",
+    "images": [
+      "images/products/bartoel/bandido-bartoil-black/bandido-bartoil-black-1.png",
+      "images/products/bartoel/bandido-bartoil-black/bandido-bartoil-black-2.jpg",
+      "images/products/bartoel/bandido-bartoil-black/bandido-bartoil-black-3.jpg",
+      "images/products/bartoel/bandido-bartoil-black/bandido-bartoil-black-4.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-bartoil-gold",
+    "name": "Bandido Bartöl Gold",
+    "category": "Bartöl",
+    "price": 7.99,
+    "size": "30 ml",
+    "shortDescription": "Hochwertiges Bartöl mit goldenem Glanz und luxuriösem Duft.",
+    "description": "Das Bandido Bartöl Gold verleiht dem Bart einen edlen Glanz und intensiv pflegende Wirkung. Die Premium-Formel mit wertvollen Ölen sorgt für einen weichen, gepflegten Bart und verhindert Trockenheit.",
+    "image": "images/products/bartoel/bandido-bartoil-gold/bandido-bartoil-gold-1.png",
+    "images": [
+      "images/products/bartoel/bandido-bartoil-gold/bandido-bartoil-gold-1.png",
+      "images/products/bartoel/bandido-bartoil-gold/bandido-bartoil-gold-2.jpg",
+      "images/products/bartoel/bandido-bartoil-gold/bandido-bartoil-gold-3.jpg",
+      "images/products/bartoel/bandido-bartoil-gold/bandido-bartoil-gold-4.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-bartoil-rose",
+    "name": "Bandido Bartöl Rose",
+    "category": "Bartöl",
+    "price": 7.99,
+    "size": "30 ml",
+    "shortDescription": "Duftendes Bartöl mit Rosen-Extrakt für intensive Pflege.",
+    "description": "Das Bandido Bartöl Rose ist ein feines Pflegeöl mit Rosen-Extrakt. Es pflegt den Bart intensiv, macht ihn glänzend und weich. Der zarte Rosenduft sorgt für ein angenehmes Dufterlebnis den ganzen Tag.",
+    "image": "images/products/bartoel/bandido-bartoil-rose/bandido-bartoil-rose-1.png",
+    "images": [
+      "images/products/bartoel/bandido-bartoil-rose/bandido-bartoil-rose-1.png",
+      "images/products/bartoel/bandido-bartoil-rose/bandido-bartoil-rose-2.jpg",
+      "images/products/bartoel/bandido-bartoil-rose/bandido-bartoil-rose-3.jpg",
+      "images/products/bartoel/bandido-bartoil-rose/bandido-bartoil-rose-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-bartoil-silver",
+    "name": "Bandido Bartöl Silver",
+    "category": "Bartöl",
+    "price": 7.99,
+    "size": "30 ml",
+    "shortDescription": "Edles Bartöl Silver für einen perfekt gepflegten Bart.",
+    "description": "Das Bandido Bartöl Silver vereint hochwertiger Pflege mit einem maskulin-frischen Duft. Die leichte Formel zieht schnell ein, ohne zu fetten, und hinterlässt einen seidenweich, gepflegten Bart.",
+    "image": "images/products/bartoel/bandido-bartoil-silver/bandido-bartoil-silver-1.png",
+    "images": [
+      "images/products/bartoel/bandido-bartoil-silver/bandido-bartoil-silver-1.png",
+      "images/products/bartoel/bandido-bartoil-silver/bandido-bartoil-silver-2.jpg",
+      "images/products/bartoel/bandido-bartoil-silver/bandido-bartoil-silver-3.jpg",
+      "images/products/bartoel/bandido-bartoil-silver/bandido-bartoil-silver-4.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-bartoil-green",
+    "name": "Bandido Bartöl Green",
+    "category": "Bartöl",
+    "price": 7.99,
+    "size": "30 ml",
+    "shortDescription": "Frisches Bartöl Green mit natürlichen Extrakten für tägliche Pflege.",
+    "description": "Das Bandido Bartöl Green enthält natürliche Extrakte und bietet intensive Pflege für den Bart. Es macht das Barthaar weich, glänzend und angenehm zu tragen – ideal für die tägliche Bartpflege.",
+    "image": "images/products/bartoel/bandido-bartoill-green/bandido-bartoil-green-1.png",
+    "images": [
+      "images/products/bartoel/bandido-bartoill-green/bandido-bartoil-green-1.png",
+      "images/products/bartoel/bandido-bartoill-green/bandido-bartoil-green-2.jpg",
+      "images/products/bartoel/bandido-bartoill-green/bandido-bartoil-green-3.jpg",
+      "images/products/bartoel/bandido-bartoill-green/bandido-bartoil-green-4.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-aqua-wax-1-white-150ml",
+    "name": "Bandido Aqua Wax 1 – White",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Leichter Halt mit natürlichem Look – ideal für feines Haar.",
+    "description": "Das Bandido Aqua Wax 1 White bietet einen leichten Halt (Stufe 1) und verleiht dem Haar einen natürlichen, frischen Look. Auf Wasserbasis – leicht auswaschbar, ideal für feines und normales Haar. Stufe 1 = leichter Halt.",
+    "image": "images/products/wax/bandido-aqua-wax-1-white-150ml/bandido-aqua-wax-1-white-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-1-white-150ml/bandido-aqua-wax-1-white-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-1-white-150ml/bandido-aqua-wax-1-white-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-1-white-150ml/bandido-aqua-wax-1-white-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-1-white-150ml/bandido-aqua-wax-1-white-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-1-white-150ml/bandido-aqua-wax-1-white-150ml-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aqua-wax-2-orange-150ml",
+    "name": "Bandido Aqua Wax 2 – Orange",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Leicht-mittlerer Halt mit leichtem Glanz – für jeden Tag.",
+    "description": "Das Bandido Aqua Wax 2 Orange bietet leicht-mittleren Halt (Stufe 2) und verleiht dem Haar einen dezenten Glanz. Auf Wasserbasis – leicht auswaschbar, für jeden Haartyp geeignet. Stufe 2 = leicht-mittlerer Halt.",
+    "image": "images/products/wax/bandido-aqua-wax-2-orange-150ml/bandido-aqua-wax-2-orange-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-2-orange-150ml/bandido-aqua-wax-2-orange-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-2-orange-150ml/bandido-aqua-wax-2-orange-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-2-orange-150ml/bandido-aqua-wax-2-orange-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-2-orange-150ml/bandido-aqua-wax-2-orange-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-2-orange-150ml/bandido-aqua-wax-2-orange-150ml-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aqua-wax-3-brown-150ml",
+    "name": "Bandido Aqua Wax 3 – Brown",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Mittlerer Halt mit sattem Glanz – für definierten Style.",
+    "description": "Das Bandido Aqua Wax 3 Brown bietet mittleren Halt (Stufe 3) mit sattem Glanz. Ideal für strukturierte Frisuren mit klarer Definition. Auf Wasserbasis – einfach auswaschbar. Stufe 3 = mittlerer Halt.",
+    "image": "images/products/wax/bandido-aqua-wax-3-brown-150ml/bandido-aqua-wax-3-brown-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-3-brown-150ml/bandido-aqua-wax-3-brown-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-3-brown-150ml/bandido-aqua-wax-3-brown-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-3-brown-150ml/bandido-aqua-wax-3-brown-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-3-brown-150ml/bandido-aqua-wax-3-brown-150ml-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aqua-wax-4-green-125ml",
+    "name": "Bandido Aqua Wax 4 – Green",
+    "category": "Wax",
+    "price": 7.99,
+    "size": "125 ml",
+    "shortDescription": "Mittlerer bis starker Halt mit Hochglanz – der Klassiker.",
+    "description": "Das Bandido Aqua Wax 4 Green ist der Klassiker unter den Aqua Waxen. Mittlerer bis starker Halt (Stufe 4) mit Hochglanz-Finish. Auf Wasserbasis – auswaschbar, ideal für glänzende Retro-Styles. Stufe 4 = mittlerer bis starker Halt.",
+    "image": "images/products/wax/bandido-aqua-wax-4-green-125ml/bandido-aqua-wax-4-green-125ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-4-green-125ml/bandido-aqua-wax-4-green-125ml-1.png",
+      "images/products/wax/bandido-aqua-wax-4-green-125ml/bandido-aqua-wax-4-green-125ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-4-green-125ml/bandido-aqua-wax-4-green-125ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-4-green-125ml/bandido-aqua-wax-4-green-125ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-4-green-125ml/bandido-aqua-wax-4-green-125ml-5.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-aqua-wax-5-blue-125ml",
+    "name": "Bandido Aqua Wax 5 – Blue (125 ml)",
+    "category": "Wax",
+    "price": 7.99,
+    "size": "125 ml",
+    "shortDescription": "Starker Halt mit intensivem Glanz – der Barber-Favorit.",
+    "description": "Das Bandido Aqua Wax 5 Blue ist einer der meistverkauften Waxe im Barbershop. Starker Halt (Stufe 5) mit intensivem Hochglanz. Auf Wasserbasis, leicht auswaschbar. Ideal für Ducktail, Slick-Back und pompadour-ähnliche Styles.",
+    "image": "images/products/wax/bandido-aqua-wax-5-blue-125ml/bandido-aqua-wax-5-blue-125ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-5-blue-125ml/bandido-aqua-wax-5-blue-125ml-1.png",
+      "images/products/wax/bandido-aqua-wax-5-blue-125ml/bandido-aqua-wax-5-blue-125ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-125ml/bandido-aqua-wax-5-blue-125ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-125ml/bandido-aqua-wax-5-blue-125ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-125ml/bandido-aqua-wax-5-blue-125ml-5.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-aqua-wax-5-blue-150ml",
+    "name": "Bandido Aqua Wax 5 – Blue (150 ml)",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Starker Halt mit intensivem Glanz – in der großen 150 ml Version.",
+    "description": "Das Bandido Aqua Wax 5 Blue in der 150 ml Variante bietet denselben starken Halt (Stufe 5) mit intensivem Hochglanz wie die kleinere Variante – nur mit mehr Inhalt für den täglichen Gebrauch.",
+    "image": "images/products/wax/bandido-aqua-wax-5-blue-150ml/bandido-aqua-wax-5-blue-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-5-blue-150ml/bandido-aqua-wax-5-blue-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-5-blue-150ml/bandido-aqua-wax-5-blue-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-150ml/bandido-aqua-wax-5-blue-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-150ml/bandido-aqua-wax-5-blue-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-150ml/bandido-aqua-wax-5-blue-150ml-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aqua-wax-5-blue-450ml",
+    "name": "Bandido Aqua Wax 5 – Blue (450 ml)",
+    "category": "Wax",
+    "price": 22.99,
+    "size": "450 ml",
+    "shortDescription": "Das Barber-Profi-Format – 450 ml Aqua Wax 5 Blue.",
+    "description": "Das Bandido Aqua Wax 5 Blue im XXL-Profi-Format mit 450 ml. Starker Halt (Stufe 5) mit intensivem Hochglanz – ideal für Barbershops und Profi-Anwender, die täglich mit großen Mengen arbeiten.",
+    "image": "images/products/wax/bandido-aqua-wax-5-blue-450ml/bandido-aqua-wax-5-blue-450ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-5-blue-450ml/bandido-aqua-wax-5-blue-450ml-1.png",
+      "images/products/wax/bandido-aqua-wax-5-blue-450ml/bandido-aqua-wax-5-blue-450ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-450ml/bandido-aqua-wax-5-blue-450ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-5-blue-450ml/bandido-aqua-wax-5-blue-450ml-4.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-aqua-wax-6-grey-150ml",
+    "name": "Bandido Aqua Wax 6 – Grey",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Extra starker Halt mit sattem Glanz – für anspruchsvolle Styles.",
+    "description": "Das Bandido Aqua Wax 6 Grey bietet extra starken Halt (Stufe 6) mit sattem Hochglanz. Ideal für aufwendige Frisuren, die den ganzen Tag perfekt sitzen sollen. Auf Wasserbasis – auswaschbar. Stufe 6 = extra starker Halt.",
+    "image": "images/products/wax/bandido-aqua-wax-6-grey-150ml/bandido-aqua-wax-6-grey-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-6-grey-150ml/bandido-aqua-wax-6-grey-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-6-grey-150ml/bandido-aqua-wax-6-grey-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-6-grey-150ml/bandido-aqua-wax-6-grey-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-6-grey-150ml/bandido-aqua-wax-6-grey-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-6-grey-150ml/bandido-aqua-wax-6-grey-150ml-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aqua-wax-7-red-125ml",
+    "name": "Bandido Aqua Wax 7 – Red (125 ml)",
+    "category": "Wax",
+    "price": 7.99,
+    "size": "125 ml",
+    "shortDescription": "Sehr starker Halt mit intensivem Glanz – für perfekte Frisuren.",
+    "description": "Das Bandido Aqua Wax 7 Red bietet sehr starken Halt (Stufe 7) mit intensivem Hochglanz-Finish. Perfekt für klassische Herrenfrisuren, die lange halten sollen. Auf Wasserbasis – leicht auswaschbar.",
+    "image": "images/products/wax/bandido-aqua-wax-7-red-125ml/bandido-aqua-wax-7-red-125ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-7-red-125ml/bandido-aqua-wax-7-red-125ml-1.png",
+      "images/products/wax/bandido-aqua-wax-7-red-125ml/bandido-aqua-wax-7-red-125ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-7-red-125ml/bandido-aqua-wax-7-red-125ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-7-red-125ml/bandido-aqua-wax-7-red-125ml-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aqua-wax-7-red-150ml",
+    "name": "Bandido Aqua Wax 7 – Red (150 ml)",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Sehr starker Halt mit intensivem Glanz – in der 150 ml Größe.",
+    "description": "Das Bandido Aqua Wax 7 Red in 150 ml bietet sehr starken Halt (Stufe 7) mit intensivem Hochglanz. Ideal für definierte Herrenfrisuren mit Langzeit-Halt. Auf Wasserbasis.",
+    "image": "images/products/wax/bandido-aqua-wax-7-red-150ml/bandido-aqua-wax-7-red-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-7-red-150ml/bandido-aqua-wax-7-red-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-7-red-150ml/bandido-aqua-wax-7-red-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-7-red-150ml/bandido-aqua-wax-7-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-7-red-150ml/bandido-aqua-wax-7-red-150ml-4.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aqua-wax-8-black-125ml",
+    "name": "Bandido Aqua Wax 8 – Black (125 ml)",
+    "category": "Wax",
+    "price": 7.99,
+    "size": "125 ml",
+    "shortDescription": "Maximaler Halt mit Hochglanz – für den ultimativen Look.",
+    "description": "Das Bandido Aqua Wax 8 Black ist das stärkste Aqua Wax im Sortiment. Maximaler Halt (Stufe 8) mit intensivem Hochglanz – für Frisuren, die absolut perfekt sitzen müssen. Auf Wasserbasis.",
+    "image": "images/products/wax/bandido-aqua-wax-8-black-125ml/bandido-aqua-wax-8-black-125ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-8-black-125ml/bandido-aqua-wax-8-black-125ml-1.png",
+      "images/products/wax/bandido-aqua-wax-8-black-125ml/bandido-aqua-wax-8-black-125ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-125ml/bandido-aqua-wax-8-black-125ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-125ml/bandido-aqua-wax-8-black-125ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-125ml/bandido-aqua-wax-8-black-125ml-5.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-aqua-wax-8-black-150ml",
+    "name": "Bandido Aqua Wax 8 – Black (150 ml)",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Maximaler Halt mit Hochglanz – in der 150 ml Größe.",
+    "description": "Das Bandido Aqua Wax 8 Black in 150 ml bietet maximalen Halt (Stufe 8) mit intensivem Hochglanz. Ideal für alle, die den stärksten Halt suchen und täglich viel Produkt verwenden.",
+    "image": "images/products/wax/bandido-aqua-wax-8-black-150ml/bandido-aqua-wax-8-black-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-8-black-150ml/bandido-aqua-wax-8-black-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-8-black-150ml/bandido-aqua-wax-8-black-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-150ml/bandido-aqua-wax-8-black-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-150ml/bandido-aqua-wax-8-black-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-150ml/bandido-aqua-wax-8-black-150ml-5.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-aqua-wax-8-black-450ml",
+    "name": "Bandido Aqua Wax 8 – Black (450 ml)",
+    "category": "Wax",
+    "price": 22.99,
+    "size": "450 ml",
+    "shortDescription": "Das Profi-Format – Aqua Wax 8 Black in 450 ml.",
+    "description": "Das Bandido Aqua Wax 8 Black im XXL-Profi-Format mit 450 ml. Maximaler Halt (Stufe 8) mit intensivem Hochglanz – ideal für Barbershops und Profi-Anwender, die täglich mit dem stärksten Wax arbeiten.",
+    "image": "images/products/wax/bandido-aqua-wax-8-black-450ml/bandido-aqua-wax-8-black-450ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-8-black-450ml/bandido-aqua-wax-8-black-450ml-1.png",
+      "images/products/wax/bandido-aqua-wax-8-black-450ml/bandido-aqua-wax-8-black-450ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-8-black-450ml/bandido-aqua-wax-8-black-450ml-3.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-aqua-wax-matte-150ml",
+    "name": "Bandido Aqua Wax Matte",
+    "category": "Wax",
+    "price": 8.99,
+    "size": "150 ml",
+    "shortDescription": "Starker Halt mit mattem Finish – für den modernen Look.",
+    "description": "Das Bandido Aqua Wax Matte bietet starken Halt ohne Glanz für einen modernen, matten Look. Ideal für strukturierte Styles mit natürlichem Finish. Auf Wasserbasis – leicht auswaschbar.",
+    "image": "images/products/wax/bandido-aqua-wax-matte-150ml/bandido-aqua-wax-matte-150ml-1.png",
+    "images": [
+      "images/products/wax/bandido-aqua-wax-matte-150ml/bandido-aqua-wax-matte-150ml-1.png",
+      "images/products/wax/bandido-aqua-wax-matte-150ml/bandido-aqua-wax-matte-150ml-2.jpg",
+      "images/products/wax/bandido-aqua-wax-matte-150ml/bandido-aqua-wax-matte-150ml-3.jpg",
+      "images/products/wax/bandido-aqua-wax-matte-150ml/bandido-aqua-wax-matte-150ml-4.jpg",
+      "images/products/wax/bandido-aqua-wax-matte-150ml/bandido-aqua-wax-matte-150ml-5.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-powder-wax-extra-volume",
+    "name": "Bandido Powder Wax Extra Volume",
+    "category": "Wax",
+    "price": 9.99,
+    "size": "20 g",
+    "shortDescription": "Volumen-Pulver für extra Struktur und matten Look.",
+    "description": "Das Bandido Powder Wax Extra Volume ist ein Styling-Pulver, das dem Haar sofort Volumen und Textur verleiht. Leicht in die Wurzeln einmassieren und fertig – für einen stylischen, matten Look mit maximaler Fülle.",
+    "image": "images/products/wax/bandido-powder-wax-extra-volume/bandido-powder-wax-extra-volume-1.png",
+    "images": [
+      "images/products/wax/bandido-powder-wax-extra-volume/bandido-powder-wax-extra-volume-1.png",
+      "images/products/wax/bandido-powder-wax-extra-volume/bandido-powder-wax-extra-volume-2.jpg",
+      "images/products/wax/bandido-powder-wax-extra-volume/bandido-powder-wax-extra-volume-3.jpg",
+      "images/products/wax/bandido-powder-wax-extra-volume/bandido-powder-wax-extra-volume-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-deluxe-pomade-125ml",
+    "name": "Bandido Deluxe Pomade",
+    "category": "Pomade",
+    "price": 9.99,
+    "size": "125 ml",
+    "shortDescription": "Premium Pomade für klassische Herrenfrisuren mit sattem Glanz.",
+    "description": "Die Bandido Deluxe Pomade ist eine hochwertige Pomade für klassische und moderne Herrenfrisuren. Sie bietet mittleren bis starken Halt mit sattem Hochglanz und einem angenehmen Duft. Ideal für Slick-Back, Side-Part und Pompadour.",
+    "image": "images/products/pomade/bandido-deluxe-pomade-125ml/bandido-deluxe-pomade-125ml-1.png",
+    "images": [
+      "images/products/pomade/bandido-deluxe-pomade-125ml/bandido-deluxe-pomade-125ml-1.png",
+      "images/products/pomade/bandido-deluxe-pomade-125ml/bandido-deluxe-pomade-125ml-2.jpg",
+      "images/products/pomade/bandido-deluxe-pomade-125ml/bandido-deluxe-pomade-125ml-3.jpg",
+      "images/products/pomade/bandido-deluxe-pomade-125ml/bandido-deluxe-pomade-125ml-4.jpg",
+      "images/products/pomade/bandido-deluxe-pomade-125ml/bandido-deluxe-pomade-125ml-5.jpg"
+    ],
+    "badges": ["Premium", "Bestseller"],
+    "isPremium": true,
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-matte-wax-pomade-125ml",
+    "name": "Bandido Matte Wax Pomade",
+    "category": "Pomade",
+    "price": 9.99,
+    "size": "125 ml",
+    "shortDescription": "Moderner Matte-Look mit starkem Halt – die Wax-Pomade.",
+    "description": "Die Bandido Matte Wax Pomade vereint das Beste aus Wax und Pomade: starker Halt mit mattem Finish für einen modernen, natürlichen Look. Ideal für strukturierte Frisuren ohne Glanz.",
+    "image": "images/products/pomade/bandido-matte-wax-pomade-125ml/bandido-matte-wax-pomade-125ml-1.png",
+    "images": [
+      "images/products/pomade/bandido-matte-wax-pomade-125ml/bandido-matte-wax-pomade-125ml-1.png",
+      "images/products/pomade/bandido-matte-wax-pomade-125ml/bandido-matte-wax-pomade-125ml-2.jpg",
+      "images/products/pomade/bandido-matte-wax-pomade-125ml/bandido-matte-wax-pomade-125ml-3.jpg",
+      "images/products/pomade/bandido-matte-wax-pomade-125ml/bandido-matte-wax-pomade-125ml-4.jpg",
+      "images/products/pomade/bandido-matte-wax-pomade-125ml/bandido-matte-wax-pomade-125ml-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-spider-wax-pomade-125ml",
+    "name": "Bandido Spider Wax Pomade",
+    "category": "Pomade",
+    "price": 9.99,
+    "size": "125 ml",
+    "shortDescription": "Spider Wax Pomade für texturreiche Styles und Faserstruktur.",
+    "description": "Die Bandido Spider Wax Pomade ist ein einzigartiges Hybrid-Produkt mit faseriger Textur. Sie eignet sich perfekt für Spiky Styles, texturreiche Frisuren und kreative Looks. Mittlerer Halt mit natürlichem, mattiertem Finish.",
+    "image": "images/products/pomade/bandido-spider-wax-pomade-125ml/bandido-spider-wax-pomade-125ml-1.png",
+    "images": [
+      "images/products/pomade/bandido-spider-wax-pomade-125ml/bandido-spider-wax-pomade-125ml-1.png",
+      "images/products/pomade/bandido-spider-wax-pomade-125ml/bandido-spider-wax-pomade-125ml-2.jpg",
+      "images/products/pomade/bandido-spider-wax-pomade-125ml/bandido-spider-wax-pomade-125ml-3.jpg",
+      "images/products/pomade/bandido-spider-wax-pomade-125ml/bandido-spider-wax-pomade-125ml-4.jpg",
+      "images/products/pomade/bandido-spider-wax-pomade-125ml/bandido-spider-wax-pomade-125ml-5.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-aftercream-cologne-colombia",
+    "name": "Bandido After Cream Cologne – Colombia",
+    "category": "Aftershave",
+    "price": 14.99,
+    "size": "After Cream",
+    "shortDescription": "Pflegende After Cream Cologne mit exotischem Duft – Colombia.",
+    "description": "Die Bandido After Cream Cologne Colombia verbindet die pflegende Wirkung einer After-Shave-Creme mit einem frischen, exotisch-maskulinen Duft. Beruhigt die Haut nach der Rasur und hinterlässt ein angenehmes Dufterlebnis.",
+    "image": "images/products/aftershave/bandido-aftercream-cologne-colombia/bandido-aftercream-cologne-colombia-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftercream-cologne-colombia/bandido-aftercream-cologne-colombia-1.png",
+      "images/products/aftershave/bandido-aftercream-cologne-colombia/bandido-aftercream-cologne-colombia-2.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-colombia/bandido-aftercream-cologne-colombia-3.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-colombia/bandido-aftercream-cologne-colombia-4.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-colombia/bandido-aftercream-cologne-colombia-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aftercream-cologne-istanbul",
+    "name": "Bandido After Cream Cologne – Istanbul",
+    "category": "Aftershave",
+    "price": 14.99,
+    "size": "After Cream",
+    "shortDescription": "Orientalischer After Cream Duft – Istanbul.",
+    "description": "Die Bandido After Cream Cologne Istanbul begeistert mit einem orientalisch-maskulinen Duft. Die pflegende Creme-Formel beruhigt die Haut nach der Rasur und hinterlässt einen edlen, langanhaltenden Duft.",
+    "image": "images/products/aftershave/bandido-aftercream-cologne-istanbul/bandido-aftercream-cologne-istanbul-1.jpg",
+    "images": [
+      "images/products/aftershave/bandido-aftercream-cologne-istanbul/bandido-aftercream-cologne-istanbul-1.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-istanbul/bandido-aftercream-cologne-istanbul-2.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-istanbul/bandido-aftercream-cologne-istanbul-3.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-istanbul/bandido-aftercream-cologne-istanbul-4.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-istanbul/bandido-aftercream-cologne-istanbul-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aftercream-cologne-london",
+    "name": "Bandido After Cream Cologne – London",
+    "category": "Aftershave",
+    "price": 14.99,
+    "size": "After Cream",
+    "shortDescription": "Klassisch-eleganter After Cream Duft – London.",
+    "description": "Die Bandido After Cream Cologne London besticht mit einem klassisch-eleganten, britisch inspirierten Duft. Pflegende After-Shave-Creme für ein angenehmes Hautgefühl nach der Rasur.",
+    "image": "images/products/aftershave/bandido-aftercream-cologne-london/bandido-aftercream-cologne-london-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftercream-cologne-london/bandido-aftercream-cologne-london-1.png",
+      "images/products/aftershave/bandido-aftercream-cologne-london/bandido-aftercream-cologne-london-2.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-london/bandido-aftercream-cologne-london-3.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-london/bandido-aftercream-cologne-london-4.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-london/bandido-aftercream-cologne-london-5.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-aftercream-cologne-new-york",
+    "name": "Bandido After Cream Cologne – New York",
+    "category": "Aftershave",
+    "price": 14.99,
+    "size": "After Cream",
+    "shortDescription": "Urbaner After Cream Duft – New York.",
+    "description": "Die Bandido After Cream Cologne New York verkörpert den urbanen Stil der Metropole. Frischer, maskuliner Duft kombiniert mit einer pflegenden After-Shave-Creme für ein professionelles Finishing.",
+    "image": "images/products/aftershave/bandido-aftercream-cologne-new-york/bandido-aftercream-cologne-new-york-1.jpg",
+    "images": [
+      "images/products/aftershave/bandido-aftercream-cologne-new-york/bandido-aftercream-cologne-new-york-1.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-new-york/bandido-aftercream-cologne-new-york-2.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-new-york/bandido-aftercream-cologne-new-york-3.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-new-york/bandido-aftercream-cologne-new-york-4.jpg",
+      "images/products/aftershave/bandido-aftercream-cologne-new-york/bandido-aftercream-cologne-new-york-5.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-aftershave-cologne-berlin-350ml",
+    "name": "Bandido Aftershave Cologne – Berlin (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Frischer Aftershave-Duft mit Berliner Charme.",
+    "description": "Das Bandido Aftershave Cologne Berlin in der 350 ml Flasche – ein frischer, maskuliner Duft mit dem Charme der deutschen Hauptstadt. Nach der Rasur auftragen für ein erfrischendes, langanhaltendes Dufterlebnis.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-berlin-350ml/bandido-aftershave-cologne-berlin-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-berlin-350ml/bandido-aftershave-cologne-berlin-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-berlin-350ml/bandido-aftershave-cologne-berlin-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-berlin-350ml/bandido-aftershave-cologne-berlin-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-berlin-350ml/bandido-aftershave-cologne-berlin-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-berlin-350ml/bandido-aftershave-cologne-berlin-350ml-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aftershave-cologne-las-vegas-350ml",
+    "name": "Bandido Aftershave Cologne – Las Vegas (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Glamouröser Aftershave-Duft – Las Vegas Style.",
+    "description": "Das Bandido Aftershave Cologne Las Vegas in 350 ml bringt den Glamour der Neon-City. Ein intensiv-maskuliner Duft für Männer, die Stil und Auftritt lieben. Für ein perfektes Rasur-Finish.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-las-vegas-350ml/bandido-aftershave-cologne-las-vega-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-las-vegas-350ml/bandido-aftershave-cologne-las-vega-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-las-vegas-350ml/bandido-aftershave-cologne-las-vegas-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-las-vegas-350ml/bandido-aftershave-cologne-las-vegas-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-las-vegas-350ml/bandido-aftershave-cologne-las-vegas-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-las-vegas-350ml/bandido-aftershave-cologne-las-vegas-350ml-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aftershave-cologne-lemon-350ml",
+    "name": "Bandido Aftershave Cologne – Lemon (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Frischer Zitronen-Aftershave für einen erfrischenden Start.",
+    "description": "Das Bandido Aftershave Cologne Lemon in 350 ml bietet einen frischen, zitrusartigen Duft für einen erfrischenden Start in den Tag. Ideal nach der Rasur für ein belebendes, sauberes Gefühl.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-lemon-350ml/bandido-aftershave-cologne-lemon-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-lemon-350ml/bandido-aftershave-cologne-lemon-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-lemon-350ml/bandido-aftershave-cologne-lemon-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-lemon-350ml/bandido-aftershave-cologne-lemon-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-lemon-350ml/bandido-aftershave-cologne-lemon-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-lemon-350ml/bandido-aftershave-cologne-lemon-350ml-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aftershave-cologne-mexico-city-350ml",
+    "name": "Bandido Aftershave Cologne – Mexico City (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Intensiver Aftershave-Duft – Mexico City.",
+    "description": "Das Bandido Aftershave Cologne Mexico City in 350 ml begeistert mit einem kraftvollen, maskulinen Duft. Für Männer, die Stärke und Charakter ausstrahlen. Ideal als Abschluss der täglichen Rasurroutine.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-mexico-city-350ml/bandido-aftershave-cologne-mexico-city-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-mexico-city-350ml/bandido-aftershave-cologne-mexico-city-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-mexico-city-350ml/bandido-aftershave-cologne-mexico-city-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-mexico-city-350ml/bandido-aftershave-cologne-mexico-city-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-mexico-city-350ml/bandido-aftershave-cologne-mexico-city-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-mexico-city-350ml/bandido-aftershave-cologne-mexico-city-350ml-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aftershave-cologne-moscow-350ml",
+    "name": "Bandido Aftershave Cologne – Moscow (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Maskulin-kühler Aftershave-Duft – Moscow.",
+    "description": "Das Bandido Aftershave Cologne Moscow in 350 ml besticht mit einem maskulin-kühlen Duft, inspiriert von der Metropole Moskau. Ein frischer, charakterstarker Duft für den modernen Mann.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-moscow-350ml/bandido-aftershave-cologne-moscow-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-moscow-350ml/bandido-aftershave-cologne-moscow-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-moscow-350ml/bandido-aftershave-cologne-moscow-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-moscow-350ml/bandido-aftershave-cologne-moscow-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-moscow-350ml/bandido-aftershave-cologne-moscow-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-moscow-350ml/bandido-aftershave-cologne-moscow-350ml-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-aftershave-cologne-sicilia-350ml",
+    "name": "Bandido Aftershave Cologne – Sicilia (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Mediterraner Aftershave-Duft – Sicilia.",
+    "description": "Das Bandido Aftershave Cologne Sicilia in 350 ml bringt die Wärme des Mittelmeers. Ein mediterraner, leicht süßlicher Duft für einen entspannten, elegant-maskulinen Auftritt nach der Rasur.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-sicilia-350ml/bandido-aftershave-cologne-sicilia-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-sicilia-350ml/bandido-aftershave-cologne-sicilia-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-sicilia-350ml/bandido-aftershave-cologne-sicilia-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-sicilia-350ml/bandido-aftershave-cologne-sicilia-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-sicilia-350ml/bandido-aftershave-cologne-sicilia-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-sicilia-350ml/bandido-aftershave-cologne-sicilia-350ml-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-aftershave-cologne-sydney-350ml",
+    "name": "Bandido Aftershave Cologne – Sydney (350 ml)",
+    "category": "Aftershave",
+    "price": 12.99,
+    "size": "350 ml",
+    "shortDescription": "Frischer Ozean-Duft – Aftershave Cologne Sydney.",
+    "description": "Das Bandido Aftershave Cologne Sydney in 350 ml inspiriert mit einem frischen, leicht maritimen Duft – wie der Wind am Hafen von Sydney. Perfekt für Männer, die Frische und Leichtigkeit lieben.",
+    "image": "images/products/aftershave/bandido-aftershave-cologne-sydney-350ml/bandido-aftershave-cologne-sydney-350ml-1.png",
+    "images": [
+      "images/products/aftershave/bandido-aftershave-cologne-sydney-350ml/bandido-aftershave-cologne-sydney-350ml-1.png",
+      "images/products/aftershave/bandido-aftershave-cologne-sydney-350ml/bandido-aftershave-cologne-sydney-350ml-2.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-sydney-350ml/bandido-aftershave-cologne-sydney-350ml-3.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-sydney-350ml/bandido-aftershave-cologne-sydney-350ml-4.jpg",
+      "images/products/aftershave/bandido-aftershave-cologne-sydney-350ml/bandido-aftershave-cologne-sydney-350ml-5.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-bartshampoo-sulfatfrei-salzfrei",
+    "name": "Bandido Bartshampoo – Sulfatfrei & Salzfrei",
+    "category": "Haarpflege",
+    "price": 10.99,
+    "size": "250 ml",
+    "shortDescription": "Schonend reinigendes Bartshampoo ohne Sulfate und Salze.",
+    "description": "Das Bandido Bartshampoo Sulfatfrei & Salzfrei reinigt den Bart besonders schonend. Die sulfat- und salzfreie Formel pflegt das Barthaar und die Haut darunter, ohne auszutrocknen. Ideal für die tägliche Bartpflege.",
+    "image": "images/products/haarpflege/bandido-bartshampoo-sulfatfrei-salzfrei/bandido-bartshampoo-sulfatfrei-salzfrei-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-bartshampoo-sulfatfrei-salzfrei/bandido-bartshampoo-sulfatfrei-salzfrei-1.png",
+      "images/products/haarpflege/bandido-bartshampoo-sulfatfrei-salzfrei/bandido-bartshampoo-sulfatfrei-salzfrei-2.jpg",
+      "images/products/haarpflege/bandido-bartshampoo-sulfatfrei-salzfrei/bandido-bartshampoo-sulfatfrei-salzfrei-3.jpg",
+      "images/products/haarpflege/bandido-bartshampoo-sulfatfrei-salzfrei/bandido-bartshampoo-sulfatfrei-salzfrei-4.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-black-garlic-shampoo",
+    "name": "Bandido Black Garlic Shampoo",
+    "category": "Haarpflege",
+    "price": 10.99,
+    "size": "300 ml",
+    "shortDescription": "Nährendes Shampoo mit Schwarzem Knoblauch-Extrakt.",
+    "description": "Das Bandido Black Garlic Shampoo enthält wertvollen Schwarzen Knoblauch-Extrakt, der das Haar intensiv nährt und stärkt. Ideal für strapaziertes Haar – für mehr Glanz, Fülle und Vitalität.",
+    "image": "images/products/haarpflege/bandido-black-garlic-shampoo/bandido-black-garlic-shampoo-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-black-garlic-shampoo/bandido-black-garlic-shampoo-1.png",
+      "images/products/haarpflege/bandido-black-garlic-shampoo/bandido-black-garlic-shampoo-2.jpg",
+      "images/products/haarpflege/bandido-black-garlic-shampoo/bandido-black-garlic-shampoo-3.jpg",
+      "images/products/haarpflege/bandido-black-garlic-shampoo/bandido-black-garlic-shampoo-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-hair-tonic-classic-blue",
+    "name": "Bandido Hair Tonic Classic Blue",
+    "category": "Haarpflege",
+    "price": 7.99,
+    "size": "300 ml",
+    "shortDescription": "Klassisches Haartonikum für gepflegtes, gesundes Haar.",
+    "description": "Das Bandido Hair Tonic Classic Blue ist ein klassisches Haartonikum, das die Kopfhaut belebt und das Haar kräftigt. Es verleiht dem Haar Glanz und Geschmeidigkeit – ideal für die tägliche Haarpflege.",
+    "image": "images/products/haarpflege/bandido-hair-tonic-classic-blue/bandido-hair-tonic-classic-blue-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-hair-tonic-classic-blue/bandido-hair-tonic-classic-blue-1.png"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-hair-tonic-grooming-yellow",
+    "name": "Bandido Hair Tonic Grooming Yellow",
+    "category": "Haarpflege",
+    "price": 7.99,
+    "size": "300 ml",
+    "shortDescription": "Pflegendes Grooming-Haartonikum für einen gepflegten Look.",
+    "description": "Das Bandido Hair Tonic Grooming Yellow unterstützt das tägliche Grooming und verleiht dem Haar einen gepflegten, glänzenden Look. Es kräftigt das Haar und sorgt für eine geschmeidige Textur.",
+    "image": "images/products/haarpflege/bandido-hair-tonic-grooming-yellow/bandido-hair-tonic-grooming-yellow-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-hair-tonic-grooming-yellow/bandido-hair-tonic-grooming-yellow-1.png"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-hair-tonic-sea-salt",
+    "name": "Bandido Hair Tonic Sea Salt",
+    "category": "Haarpflege",
+    "price": 8.99,
+    "size": "300 ml",
+    "shortDescription": "Meersalz-Haartonikum für natürliche Textur und Beachwaves.",
+    "description": "Das Bandido Hair Tonic Sea Salt verleiht dem Haar eine natürliche, texturierte Struktur – ideal für Beachwaves und lässige Surfer-Styles. Mit Meersalz-Extrakt für ein frisches, natürliches Styling.",
+    "image": "images/products/haarpflege/bandido-hair-tonic-sea-salt/bandido-hair-tonic-sea-salt-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-hair-tonic-sea-salt/bandido-hair-tonic-sea-salt-1.png",
+      "images/products/haarpflege/bandido-hair-tonic-sea-salt/bandido-hair-tonic-sea-salt-2.jpg",
+      "images/products/haarpflege/bandido-hair-tonic-sea-salt/bandido-hair-tonic-sea-salt-3.jpg",
+      "images/products/haarpflege/bandido-hair-tonic-sea-salt/bandido-hair-tonic-sea-salt-4.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-keratin-shampoo",
+    "name": "Bandido Keratin Shampoo",
+    "category": "Haarpflege",
+    "price": 11.99,
+    "size": "300 ml",
+    "shortDescription": "Kräftigendes Keratin-Shampoo für starkes, gesundes Haar.",
+    "description": "Das Bandido Keratin Shampoo stärkt das Haar von innen mit wertvollem Keratin. Es repariert geschädigtes Haar, reduziert Spliss und verleiht mehr Glanz und Geschmeidigkeit. Ideal für strapaziertes Haar.",
+    "image": "images/products/haarpflege/bandido-keratin-shampoo/bandido-keratin-shampoo-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-keratin-shampoo/bandido-keratin-shampoo-1.png",
+      "images/products/haarpflege/bandido-keratin-shampoo/bandido-keratin-shampoo-2.jpg",
+      "images/products/haarpflege/bandido-keratin-shampoo/bandido-keratin-shampoo-3.jpg",
+      "images/products/haarpflege/bandido-keratin-shampoo/bandido-keratin-shampoo-4.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-two-phase-conditioner-argan",
+    "name": "Bandido Two Phase Conditioner – Argan",
+    "category": "Haarpflege",
+    "price": 9.99,
+    "size": "400 ml",
+    "shortDescription": "Zweiphasen-Conditioner mit Arganöl für intensiv gepflegtes Haar.",
+    "description": "Der Bandido Two Phase Conditioner Argan ist ein pflegender Zweiphasen-Conditioner mit wertvollem Arganöl. Er entwirrt das Haar, verleiht Glanz und Geschmeidigkeit – ohne Ausspülen. Ideal für tägliche Pflege.",
+    "image": "images/products/haarpflege/bandido-two-phase-conditioner-argan/bandido-two-phase-conditioner-argan-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-two-phase-conditioner-argan/bandido-two-phase-conditioner-argan-1.png",
+      "images/products/haarpflege/bandido-two-phase-conditioner-argan/bandido-two-phase-conditioner-argan-2.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-argan/bandido-two-phase-conditioner-argan-3.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-argan/bandido-two-phase-conditioner-argan-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-two-phase-conditioner-herbal",
+    "name": "Bandido Two Phase Conditioner – Herbal",
+    "category": "Haarpflege",
+    "price": 9.99,
+    "size": "400 ml",
+    "shortDescription": "Zweiphasen-Conditioner mit Kräuterextrakten für natürliche Pflege.",
+    "description": "Der Bandido Two Phase Conditioner Herbal enthält natürliche Kräuterextrakte für eine sanfte, intensive Haarpflege. Er entwirrt, pflegt und verleiht dem Haar einen natürlichen Glanz – ohne Ausspülen.",
+    "image": "images/products/haarpflege/bandido-two-phase-conditioner-herbal/bandido-two-phase-conditioner-herbal-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-two-phase-conditioner-herbal/bandido-two-phase-conditioner-herbal-1.png",
+      "images/products/haarpflege/bandido-two-phase-conditioner-herbal/bandido-two-phase-conditioner-herbal-2.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-herbal/bandido-two-phase-conditioner-herbal-3.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-herbal/bandido-two-phase-conditioner-herbal-4.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-two-phase-conditioner-keratin",
+    "name": "Bandido Two Phase Conditioner – Keratin",
+    "category": "Haarpflege",
+    "price": 9.99,
+    "size": "400 ml",
+    "shortDescription": "Zweiphasen-Conditioner mit Keratin für kräftiges, seidenweiches Haar.",
+    "description": "Der Bandido Two Phase Conditioner Keratin stärkt das Haar mit wertvollem Keratin und entwirrt es gleichzeitig für optimale Kämmbarkeit. Verleiht Glanz, Geschmeidigkeit und schützt vor Bruch – ohne Ausspülen.",
+    "image": "images/products/haarpflege/bandido-two-phase-conditioner-keratin/bandido-two-phase-conditioner-keratin-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-two-phase-conditioner-keratin/bandido-two-phase-conditioner-keratin-1.png",
+      "images/products/haarpflege/bandido-two-phase-conditioner-keratin/bandido-two-phase-conditioner-keratin-2.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-keratin/bandido-two-phase-conditioner-keratin-3.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-keratin/bandido-two-phase-conditioner-keratin-4.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-two-phase-conditioner-milky",
+    "name": "Bandido Two Phase Conditioner – Milky",
+    "category": "Haarpflege",
+    "price": 9.99,
+    "size": "400 ml",
+    "shortDescription": "Cremiger Zweiphasen-Conditioner mit Milch-Proteinen.",
+    "description": "Der Bandido Two Phase Conditioner Milky verwöhnt das Haar mit nährenden Milch-Proteinen. Er macht das Haar geschmeidig, glänzend und leicht kämmbar – ohne Ausspülen, für intensive Pflege zwischendurch.",
+    "image": "images/products/haarpflege/bandido-two-phase-conditioner-milky/bandido-two-phase-conditioner-milky-1.png",
+    "images": [
+      "images/products/haarpflege/bandido-two-phase-conditioner-milky/bandido-two-phase-conditioner-milky-1.png",
+      "images/products/haarpflege/bandido-two-phase-conditioner-milky/bandido-two-phase-conditioner-milky-2.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-milky/bandido-two-phase-conditioner-milky-3.jpg",
+      "images/products/haarpflege/bandido-two-phase-conditioner-milky/bandido-two-phase-conditioner-milky-4.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-haargel-05-blue",
+    "name": "Bandido Haargel Nr. 5 – Blue",
+    "category": "Styling",
+    "price": 6.99,
+    "size": "450 ml",
+    "shortDescription": "Starkes Haargel Nr. 5 mit blauem Glanz.",
+    "description": "Das Bandido Haargel Nr. 5 Blue bietet starken Halt und einen seidigen Glanz. Ideal für alle, die eine zuverlässige, langanhaltende Frisur benötigen. Mit frischem Duft und feuchtigkeitserhaltender Formel.",
+    "image": "images/products/styling/bandido-haargel-05-blue/bandido-haargel-05-blue-1.png",
+    "images": [
+      "images/products/styling/bandido-haargel-05-blue/bandido-haargel-05-blue-1.png",
+      "images/products/styling/bandido-haargel-05-blue/bandido-haargel-05-blue-2.jpg",
+      "images/products/styling/bandido-haargel-05-blue/bandido-haargel-05-blue-3.jpg",
+      "images/products/styling/bandido-haargel-05-blue/bandido-haargel-05-blue-4.jpg",
+      "images/products/styling/bandido-haargel-05-blue/bandido-haargel-05-blue-5.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-haargel-06-green",
+    "name": "Bandido Haargel Nr. 6 – Green",
+    "category": "Styling",
+    "price": 6.99,
+    "size": "450 ml",
+    "shortDescription": "Extra starkes Haargel Nr. 6 mit grünem Glanz.",
+    "description": "Das Bandido Haargel Nr. 6 Green bietet extra starken Halt für Frisuren, die den ganzen Tag halten. Mit einem frisch-natürlichen Duft und einer Formel, die das Haar pflegt und definiert.",
+    "image": "images/products/styling/bandido-haargel-06-green/bandido-haargel-06-green-1.png",
+    "images": [
+      "images/products/styling/bandido-haargel-06-green/bandido-haargel-06-green-1.png",
+      "images/products/styling/bandido-haargel-06-green/bandido-haargel-06-green-2.jpg",
+      "images/products/styling/bandido-haargel-06-green/bandido-haargel-06-green-3.jpg",
+      "images/products/styling/bandido-haargel-06-green/bandido-haargel-06-green-4.jpg",
+      "images/products/styling/bandido-haargel-06-green/bandido-haargel-06-green-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-haargel-07-yellow",
+    "name": "Bandido Haargel Nr. 7 – Yellow",
+    "category": "Styling",
+    "price": 6.99,
+    "size": "450 ml",
+    "shortDescription": "Sehr starkes Haargel Nr. 7 – maximaler Halt.",
+    "description": "Das Bandido Haargel Nr. 7 Yellow bietet sehr starken Halt mit einem sonnig-frischen Duft. Die Formel sorgt für einen definierten Look und hält auch voluminöse Frisuren sicher in Form.",
+    "image": "images/products/styling/bandido-haargel-07-yellow/bandido-haargel-07-yellow-1.png",
+    "images": [
+      "images/products/styling/bandido-haargel-07-yellow/bandido-haargel-07-yellow-1.png",
+      "images/products/styling/bandido-haargel-07-yellow/bandido-haargel-07-yellow-2.jpg",
+      "images/products/styling/bandido-haargel-07-yellow/bandido-haargel-07-yellow-3.jpg",
+      "images/products/styling/bandido-haargel-07-yellow/bandido-haargel-07-yellow-4.jpg",
+      "images/products/styling/bandido-haargel-07-yellow/bandido-haargel-07-yellow-5.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-haargel-08-red",
+    "name": "Bandido Haargel Nr. 8 – Red",
+    "category": "Styling",
+    "price": 6.99,
+    "size": "450 ml",
+    "shortDescription": "Maximaler Halt mit intensivem Glanz – Haargel Nr. 8 Red.",
+    "description": "Das Bandido Haargel Nr. 8 Red bietet maximalen Halt mit intensivem Hochglanz. Ideal für Frisuren, die absolut sitzen müssen – mit einem frisch-maskulinen Duft und einer pflegenden Formel.",
+    "image": "images/products/styling/bandido-haargel-08-red/bandido-haargel-08-red-1.png",
+    "images": [
+      "images/products/styling/bandido-haargel-08-red/bandido-haargel-08-red-1.png",
+      "images/products/styling/bandido-haargel-08-red/bandido-haargel-08-red-2.jpg",
+      "images/products/styling/bandido-haargel-08-red/bandido-haargel-08-red-3.jpg",
+      "images/products/styling/bandido-haargel-08-red/bandido-haargel-08-red-4.jpg",
+      "images/products/styling/bandido-haargel-08-red/bandido-haargel-08-red-5.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-haargel-09-white",
+    "name": "Bandido Haargel Nr. 9 – White",
+    "category": "Styling",
+    "price": 6.99,
+    "size": "450 ml",
+    "shortDescription": "Ultimativer Halt mit weißem Kristall-Glanz – Haargel Nr. 9.",
+    "description": "Das Bandido Haargel Nr. 9 White ist das stärkste der Haargel-Serie. Ultimativer Halt mit einem edlen Kristall-Glanz-Finish – für Frisuren, die den ganzen Tag perfekt in Form bleiben.",
+    "image": "images/products/styling/bandido-haargel-09-white/bandido-haargel-09-white-1.png",
+    "images": [
+      "images/products/styling/bandido-haargel-09-white/bandido-haargel-09-white-1.png",
+      "images/products/styling/bandido-haargel-09-white/bandido-haargel-09-white-2.jpg",
+      "images/products/styling/bandido-haargel-09-white/bandido-haargel-09-white-3.jpg",
+      "images/products/styling/bandido-haargel-09-white/bandido-haargel-09-white-4.jpg",
+      "images/products/styling/bandido-haargel-09-white/bandido-haargel-09-white-5.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-haarspray-extra-volume-8-gold",
+    "name": "Bandido Haarspray Extra Volume 8 – Gold",
+    "category": "Styling",
+    "price": 8.99,
+    "size": "400 ml",
+    "shortDescription": "Haarspray mit extra Volumen und starkem Halt – Gold.",
+    "description": "Das Bandido Haarspray Extra Volume 8 Gold gibt dem Haar extra Volumen und starken Halt. Ideal für voluminöse Frisuren, die den ganzen Tag Bestand haben sollen. Mit einem feinen Sprühnebel für gleichmäßige Verteilung.",
+    "image": "images/products/styling/bandido-haarspray-extra-volume-8-gold/bandido-haarspray-extra-volume-8-gold-1.png",
+    "images": [
+      "images/products/styling/bandido-haarspray-extra-volume-8-gold/bandido-haarspray-extra-volume-8-gold-1.png",
+      "images/products/styling/bandido-haarspray-extra-volume-8-gold/bandido-haarspray-extra-volume-8-gold-2.jpg",
+      "images/products/styling/bandido-haarspray-extra-volume-8-gold/bandido-haarspray-extra-volume-8-gold-3.jpg",
+      "images/products/styling/bandido-haarspray-extra-volume-8-gold/bandido-haarspray-extra-volume-8-gold-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-haarspray-extra-volume-8-silver",
+    "name": "Bandido Haarspray Extra Volume 8 – Silver",
+    "category": "Styling",
+    "price": 8.99,
+    "size": "400 ml",
+    "shortDescription": "Haarspray mit extra Volumen und starkem Halt – Silver.",
+    "description": "Das Bandido Haarspray Extra Volume 8 Silver bietet extra Volumen und starken Halt für voluminöse Styles. Die Silver-Edition verleiht dem Haar einen edlen, strahlenden Look.",
+    "image": "images/products/styling/bandido-haarspray-extra-volume-8-silver/bandido-haarspray-extra-volume-8-silver-1.png",
+    "images": [
+      "images/products/styling/bandido-haarspray-extra-volume-8-silver/bandido-haarspray-extra-volume-8-silver-1.png",
+      "images/products/styling/bandido-haarspray-extra-volume-8-silver/bandido-haarspray-extra-volume-8-silver-2.jpg",
+      "images/products/styling/bandido-haarspray-extra-volume-8-silver/bandido-haarspray-extra-volume-8-silver-3.jpg",
+      "images/products/styling/bandido-haarspray-extra-volume-8-silver/bandido-haarspray-extra-volume-8-silver-4.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-sheenspray-coconut",
+    "name": "Bandido Sheenspray – Coconut",
+    "category": "Styling",
+    "price": 7.99,
+    "size": "400 ml",
+    "shortDescription": "Pflegendes Glanz-Spray mit Kokos-Duft für seidig glänzendes Haar.",
+    "description": "Das Bandido Sheenspray Coconut verleiht dem Haar einen intensiven Glanz und einen erfrischenden Kokos-Duft. Die pflegende Formel macht das Haar weich, geschmeidig und strahlend – ideal als Finishing-Produkt.",
+    "image": "images/products/styling/bandido-sheenspray-coconut/bandido-sheenspray-coconut-1.png",
+    "images": [
+      "images/products/styling/bandido-sheenspray-coconut/bandido-sheenspray-coconut-1.png",
+      "images/products/styling/bandido-sheenspray-coconut/bandido-sheenspray-coconut-2.jpg",
+      "images/products/styling/bandido-sheenspray-coconut/bandido-sheenspray-coconut-3.jpg",
+      "images/products/styling/bandido-sheenspray-coconut/bandido-sheenspray-coconut-4.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-sheenspray-olive",
+    "name": "Bandido Sheenspray – Olive",
+    "category": "Styling",
+    "price": 7.99,
+    "size": "400 ml",
+    "shortDescription": "Nährendes Glanz-Spray mit Olivenöl für gepflegtes, glänzendes Haar.",
+    "description": "Das Bandido Sheenspray Olive enthält wertvolles Olivenöl und verleiht dem Haar intensiven Glanz und intensive Pflege. Als Finishing-Spray angewendet für ein gepflegtes, seidiges Erscheinungsbild.",
+    "image": "images/products/styling/bandido-sheenspray-olive/bandido-sheenspray-olive-1.png",
+    "images": [
+      "images/products/styling/bandido-sheenspray-olive/bandido-sheenspray-olive-1.png",
+      "images/products/styling/bandido-sheenspray-olive/bandido-sheenspray-olive-2.jpg",
+      "images/products/styling/bandido-sheenspray-olive/bandido-sheenspray-olive-3.jpg",
+      "images/products/styling/bandido-sheenspray-olive/bandido-sheenspray-olive-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-shaving-gel-blue-1l",
+    "name": "Bandido Rasiergel – Blue (1 L)",
+    "category": "Zubehör",
+    "price": 12.99,
+    "size": "1000 ml",
+    "shortDescription": "Professionelles Rasiergel Blue für eine perfekte Rasur.",
+    "description": "Das Bandido Rasiergel Blue ist ein professionelles Rasiergel im 1-Liter-Format. Es sorgt für eine gleichmäßige, sanfte Rasur, schützt die Haut und hinterlässt ein frisches, angenehmes Gefühl. Ideal für Barbershops und intensive Nutzung.",
+    "image": "images/products/zubehoer/bandido-shaving-gel-blue-1l/bandido-shaving-gel-blue-1l-1.png",
+    "images": [
+      "images/products/zubehoer/bandido-shaving-gel-blue-1l/bandido-shaving-gel-blue-1l-1.png",
+      "images/products/zubehoer/bandido-shaving-gel-blue-1l/bandido-shaving-gel-blue-1l-2.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-blue-1l/bandido-shaving-gel-blue-1l-3.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-blue-1l/bandido-shaving-gel-blue-1l-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  },
+  {
+    "slug": "bandido-shaving-gel-clear-1l",
+    "name": "Bandido Rasiergel – Clear (1 L)",
+    "category": "Zubehör",
+    "price": 12.99,
+    "size": "1000 ml",
+    "shortDescription": "Transparentes Rasiergel für optimale Rasur-Sicht.",
+    "description": "Das Bandido Rasiergel Clear ist ein transparentes Rasiergel für präzise Konturrasuren. Die klare Formel ermöglicht eine perfekte Sicht auf die Rasurlinien – ideal für Barbiere und anspruchsvolle Heimnutzer.",
+    "image": "images/products/zubehoer/bandido-shaving-gel-clear-1l/bandido-shaving-gel-clear-1l-1.png",
+    "images": [
+      "images/products/zubehoer/bandido-shaving-gel-clear-1l/bandido-shaving-gel-clear-1l-1.png",
+      "images/products/zubehoer/bandido-shaving-gel-clear-1l/bandido-shaving-gel-clear-1l-2.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-clear-1l/bandido-shaving-gel-clear-1l-3.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-clear-1l/bandido-shaving-gel-clear-1l-4.jpg"
+    ],
+    "badges": ["Bestseller"],
+    "isBestSeller": true
+  },
+  {
+    "slug": "bandido-shaving-gel-gold-1l",
+    "name": "Bandido Rasiergel – Gold (1 L)",
+    "category": "Zubehör",
+    "price": 12.99,
+    "size": "1000 ml",
+    "shortDescription": "Premium Rasiergel Gold für ein luxuriöses Rasiererlebnis.",
+    "description": "Das Bandido Rasiergel Gold bietet ein luxuriöses Rasiererlebnis der Extraklasse. Die goldene Premium-Formel schützt die Haut optimal, pflegt sie und sorgt für ein edles Rasier-Finish.",
+    "image": "images/products/zubehoer/bandido-shaving-gel-gold-1l/bandido-shaving-gel-gold-1l-1.png",
+    "images": [
+      "images/products/zubehoer/bandido-shaving-gel-gold-1l/bandido-shaving-gel-gold-1l-1.png",
+      "images/products/zubehoer/bandido-shaving-gel-gold-1l/bandido-shaving-gel-gold-1l-2.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-gold-1l/bandido-shaving-gel-gold-1l-3.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-gold-1l/bandido-shaving-gel-gold-1l-4.jpg"
+    ],
+    "badges": ["Premium"],
+    "isPremium": true
+  },
+  {
+    "slug": "bandido-shaving-gel-red-1l",
+    "name": "Bandido Rasiergel – Red (1 L)",
+    "category": "Zubehör",
+    "price": 12.99,
+    "size": "1000 ml",
+    "shortDescription": "Intensives Rasiergel Red für eine kraftvolle Rasur.",
+    "description": "Das Bandido Rasiergel Red bietet eine intensive Rasur mit einem würzig-maskulinen Duft. Die rote Formel schützt die Haut, sorgt für optimale Gleitfähigkeit und ein frisches Abschlussgefühl.",
+    "image": "images/products/zubehoer/bandido-shaving-gel-red-1l/bandido-shaving-gel-red-1l-1.png",
+    "images": [
+      "images/products/zubehoer/bandido-shaving-gel-red-1l/bandido-shaving-gel-red-1l-1.png",
+      "images/products/zubehoer/bandido-shaving-gel-red-1l/bandido-shaving-gel-red-1l-2.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-red-1l/bandido-shaving-gel-red-1l-3.jpg",
+      "images/products/zubehoer/bandido-shaving-gel-red-1l/bandido-shaving-gel-red-1l-4.jpg"
+    ],
+    "badges": [],
+    "isNew": false
+  },
+  {
+    "slug": "bandido-face-scrub-peeling-lemon",
+    "name": "Bandido Face Scrub Peeling – Lemon",
+    "category": "Haarpflege",
+    "price": 8.99,
+    "size": "175 ml",
+    "shortDescription": "Frischendes Gesichtspeeling mit Zitronen-Extrakt.",
+    "description": "Das Bandido Face Scrub Peeling Lemon reinigt und erfrischt die Haut mit feinen Peelingpartikeln und belebenden Zitronen-Extrakten. Es entfernt Hautunreinheiten und tote Hautzellen für einen strahlenden Teint.",
+    "image": "images/products/gesicht/bandido-face-scrub-peeling-lemon/bandido-face-scrub-peeling-lemon-1.png",
+    "images": [
+      "images/products/gesicht/bandido-face-scrub-peeling-lemon/bandido-face-scrub-peeling-lemon-1.png",
+      "images/products/gesicht/bandido-face-scrub-peeling-lemon/bandido-face-scrub-peeling-lemon-2.jpg",
+      "images/products/gesicht/bandido-face-scrub-peeling-lemon/bandido-face-scrub-peeling-lemon-3.jpg",
+      "images/products/gesicht/bandido-face-scrub-peeling-lemon/bandido-face-scrub-peeling-lemon-4.jpg"
+    ],
+    "badges": ["Neu"],
+    "isNew": true
+  },
+  {
+    "slug": "bandido-face-scrub-peeling-menthol",
+    "name": "Bandido Face Scrub Peeling – Menthol",
+    "category": "Haarpflege",
+    "price": 8.99,
+    "size": "175 ml",
+    "shortDescription": "Kühlendes Gesichtspeeling mit Menthol für einen frischen Teint.",
+    "description": "Das Bandido Face Scrub Peeling Menthol reinigt die Haut tief und intensiv mit einem kühlenden Menthol-Effekt. Die feinen Peelingpartikel entfernen Unreinheiten und verleihen der Haut sofortige Frische.",
+    "image": "images/products/gesicht/bandido-face-scrub-peeling-menthol/bandido-face-scrub-peeling-menthol-1.png",
+    "images": [
+      "images/products/gesicht/bandido-face-scrub-peeling-menthol/bandido-face-scrub-peeling-menthol-1.png",
+      "images/products/gesicht/bandido-face-scrub-peeling-menthol/bandido-face-scrub-peeling-menthol-2.jpg",
+      "images/products/gesicht/bandido-face-scrub-peeling-menthol/bandido-face-scrub-peeling-menthol-3.jpg",
+      "images/products/gesicht/bandido-face-scrub-peeling-menthol/bandido-face-scrub-peeling-menthol-4.jpg"
+    ],
+    "badges": ["Beliebt"],
+    "isPopular": true
+  }
+]

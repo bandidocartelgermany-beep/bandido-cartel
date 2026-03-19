@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "category": "Bestellungen",
+    "question": "Wie kann ich eine Bestellung aufgeben?",
+    "answer": "Du kannst ganz einfach über unseren Onlineshop bestellen. Lege die gewünschten Produkte in den Warenkorb, gehe zur Kasse und fülle deine Lieferdaten aus. Die Bezahlung erfolgt sicher über Stripe."
+  },
+  {
+    "id": "2",
+    "category": "Bestellungen",
+    "question": "Kann ich meine Bestellung stornieren?",
+    "answer": "Du kannst deine Bestellung stornieren, solange sie noch nicht versendet wurde. Nutze dafür unser Stornierungsformular auf der Seite 'Stornierung anfragen' oder kontaktiere uns direkt per E-Mail oder WhatsApp."
+  },
+  {
+    "id": "3",
+    "category": "Bestellungen",
+    "question": "Wie kann ich den Status meiner Bestellung verfolgen?",
+    "answer": "Du kannst den Status deiner Bestellung über unsere Seite 'Bestellung verfolgen' einsehen. Gib dazu deine Bestellnummer und E-Mail-Adresse ein. Nach dem Versand erhältst du eine Trackingnummer per E-Mail."
+  },
+  {
+    "id": "4",
+    "category": "Versand",
+    "question": "Wie lange dauert die Lieferung?",
+    "answer": "Wir bearbeiten Bestellungen innerhalb von maximal 2 Werktagen. Die Lieferzeit beträgt anschließend 3–5 Werktage. Du erhältst nach dem Versand eine Bestätigungs-E-Mail mit deiner Trackingnummer."
+  },
+  {
+    "id": "5",
+    "category": "Versand",
+    "question": "Wie hoch sind die Versandkosten?",
+    "answer": "Die Versandkosten betragen 6,19 €. Ab einem Bestellwert von 20 € ist der Versand kostenlos. Wir versenden ausschließlich innerhalb Deutschlands."
+  },
+  {
+    "id": "6",
+    "category": "Versand",
+    "question": "Liefert ihr auch ins Ausland?",
+    "answer": "Aktuell liefern wir ausschließlich innerhalb Deutschlands. Für internationale Anfragen kontaktiere uns bitte direkt per E-Mail oder WhatsApp – wir finden gemeinsam eine Lösung."
+  },
+  {
+    "id": "7",
+    "category": "Zahlung",
+    "question": "Welche Zahlungsmethoden werden akzeptiert?",
+    "answer": "Wir akzeptieren alle gängigen Kredit- und Debitkarten (Visa, Mastercard, American Express) sowie weitere sichere Zahlungsmethoden über Stripe. Die Zahlung ist vollständig verschlüsselt und sicher."
+  },
+  {
+    "id": "8",
+    "category": "Zahlung",
+    "question": "Ist die Bezahlung sicher?",
+    "answer": "Ja, alle Zahlungen werden über Stripe abgewickelt – einen der weltweit sichersten Zahlungsdienstleister. Deine Zahlungsdaten werden nie bei uns gespeichert und sind vollständig verschlüsselt."
+  },
+  {
+    "id": "9",
+    "category": "Rückgabe & Reklamation",
+    "question": "Kann ich ein Produkt zurückgeben?",
+    "answer": "Du kannst ungeöffnete Produkte in der Originalverpackung innerhalb von 14 Tagen zurückgeben. Nutze dafür unser Rückgabe-Formular auf der Seite 'Rückgabe anfragen'. Die Rücksendekosten trägt der Käufer."
+  },
+  {
+    "id": "10",
+    "category": "Rückgabe & Reklamation",
+    "question": "Was mache ich bei einem beschädigten oder falschen Produkt?",
+    "answer": "Wenn du ein beschädigtes oder falsches Produkt erhalten hast, kontaktiere uns bitte umgehend über unser Reklamationsformular oder direkt per E-Mail. Wir kümmern uns schnellstmöglich um eine Lösung – in der Regel per Gutschrift oder Ersatz."
+  },
+  {
+    "id": "11",
+    "category": "Rückgabe & Reklamation",
+    "question": "Wie lange habe ich Widerrufsrecht?",
+    "answer": "Du hast 14 Tage Widerrufsrecht ohne Angabe von Gründen. Die Widerrufsfrist beginnt mit dem Erhalt der Ware. Weitere Details findest du in unserer Widerrufsbelehrung."
+  },
+  {
+    "id": "12",
+    "category": "Produkte",
+    "question": "Was ist der Unterschied zwischen den Aqua Wax Stufen?",
+    "answer": "Unsere Bandido Aqua Wax Reihe hat 8 Stufen: Stufe 1 (weiß) = leichter Halt, Stufe 2 (orange) = leicht-mittlerer Halt, Stufe 3 (braun) = mittlerer Halt, Stufe 4 (grün) = mittlerer bis starker Halt, Stufe 5 (blau) = starker Halt, Stufe 6 (grau) = extra starker Halt, Stufe 7 (rot) = sehr starker Halt, Stufe 8 (schwarz) = maximaler Halt. Alle Stufen sind auf Wasserbasis."
+  },
+  {
+    "id": "13",
+    "category": "Produkte",
+    "question": "Sind die Produkte für jeden Haartyp geeignet?",
+    "answer": "Ja, unsere Produkte sind für alle Haartypen geeignet. Die Aqua Waxe der unteren Stufen (1–3) eignen sich besonders für feines Haar, die höheren Stufen (6–8) für dickes oder schwer formbares Haar. Für spezifische Empfehlungen hilft dir unser KI-Assistent gerne weiter."
+  },
+  {
+    "id": "14",
+    "category": "Produkte",
+    "question": "Sind die Produkte frei von Sulfaten und Silikonen?",
+    "answer": "Unser Bartshampoo ist explizit sulfatfrei und salzfrei. Für detaillierte Inhaltsstoffangaben zu anderen Produkten schau bitte auf die Produktbeschreibung oder kontaktiere uns direkt."
+  },
+  {
+    "id": "15",
+    "category": "Kontakt",
+    "question": "Wie kann ich den Kundenservice erreichen?",
+    "answer": "Du erreichst uns per E-Mail unter bandido.cartel.germany@gmail.com, per WhatsApp unter +49 1521 6220396 oder telefonisch unter +49 1515 5612176. Unsere Ansprechpartner: Mandy Weigand (Inhaber) und Jeremy Pongratz (Website)."
+  }
+]

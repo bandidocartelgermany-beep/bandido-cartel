@@ -42,7 +42,6 @@ PUBLIC ORDNER AUSLIEFERN
 */
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/data", express.static(path.join(__dirname, "data")));
 
 /*
 ================================
@@ -57,6 +56,7 @@ const complaintsFile = path.join(dataDir, "complaints.json");
 const returnsFile = path.join(dataDir, "returns.json");
 const cancellationsFile = path.join(dataDir, "cancellations.json");
 const contactsFile = path.join(dataDir, "contacts.json");
+const couponsFile = path.join(dataDir, "coupons.json");
 
 const publicProductsFile = path.join(__dirname, "public", "products.json");
 const dataProductsFile = path.join(dataDir, "products.json");
@@ -1233,6 +1233,79 @@ app.get("/api/orders", (req, res) => {
 
 app.get("/api/health", (req, res) => {
   res.json({ success: true, message: "Service ist verfügbar", uptime: process.uptime() });
+});
+
+/*
+================================
+PRODUKTE API
+================================
+*/
+
+app.get("/api/products", (req, res) => {
+  try {
+    const products = getProducts();
+    res.json(products);
+  } catch (error) {
+    console.error("Fehler beim Abrufen der Produkte:", error);
+    res.status(500).json({ success: false, error: "Produkte konnten nicht geladen werden." });
+  }
+});
+
+/*
+================================
+GUTSCHEIN VALIDIERUNG
+================================
+*/
+
+app.post("/api/coupons/validate", (req, res) => {
+  try {
+    const code = normalizeText(req.body?.code).toUpperCase();
+    const subtotal = normalizePrice(req.body?.subtotal);
+
+    if (!code) {
+      return res.status(400).json({ success: false, error: "Bitte gib einen Gutscheincode ein." });
+    }
+
+    const coupons = readJsonFile(couponsFile, []);
+    const coupon = coupons.find((c) => normalizeText(c.code).toUpperCase() === code);
+
+    if (!coupon) {
+      return res.status(404).json({ success: false, error: "Dieser Gutscheincode ist nicht gültig." });
+    }
+
+    if (!coupon.active) {
+      return res.status(400).json({ success: false, error: "Dieser Gutscheincode ist abgelaufen oder nicht mehr aktiv." });
+    }
+
+    if (coupon.minOrder && subtotal < coupon.minOrder) {
+      return res.status(400).json({
+        success: false,
+        error: `Dieser Gutscheincode ist erst ab einem Bestellwert von ${coupon.minOrder.toFixed(2)} € gültig.`
+      });
+    }
+
+    let discountAmount = 0;
+
+    if (coupon.type === "percent") {
+      discountAmount = (subtotal * coupon.discount) / 100;
+    } else if (coupon.type === "fixed") {
+      discountAmount = coupon.discount;
+    }
+
+    discountAmount = Math.min(discountAmount, subtotal);
+
+    return res.json({
+      success: true,
+      code: coupon.code,
+      type: coupon.type,
+      discount: coupon.discount,
+      discountAmount: Number(discountAmount.toFixed(2)),
+      description: coupon.description || ""
+    });
+  } catch (error) {
+    console.error("Fehler beim Validieren des Gutscheincodes:", error);
+    return res.status(500).json({ success: false, error: "Gutscheincode konnte nicht geprüft werden." });
+  }
 });
 
 /*
